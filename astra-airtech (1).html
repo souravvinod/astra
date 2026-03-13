@@ -2,1423 +2,2320 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Astra Airtech — Industrial HVAC & Air Handling Unit Manufacturer, Bangalore</title>
-<meta name="description" content="Astra Airtech manufactures precision Air Handling Units, Modular HVAC Systems and Cooling Coils for hospitals, data centres, malls and industrial projects. 30 years. 500+ installations. Bangalore.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Astra Airtech – Premium HVAC Air Handling Unit manufacturers in Bangalore. Custom AHU systems, cooling coils, heat recovery wheels for commercial and industrial buildings. Serving HCL, Dell, Axis Bank, Phoenix Mall.">
+<meta name="keywords" content="HVAC Air Handling Units, AHU manufacturers Bangalore, Cooling coil manufacturers, Industrial HVAC systems, Commercial HVAC equipment, AHU with HRW, Horizontal AHU, PHE cooling">
+<title>Astra Airtech | HVAC Air Handling Unit Manufacturers – Bangalore</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════
-   TOKENS
-═══════════════════════════════ */
-:root{
-  --navy:#09152a;--navy-mid:#0d1e3a;--navy-card:#111e36;
-  --cyan:#00cdd9;--cyan-dark:#008e9a;
-  --white:#ffffff;--off:#f4f7fb;
-  --border:#e4eaf3;--border-d:rgba(255,255,255,0.08);
-  --t1:#09152a;--t2:#46607e;--t3:#8da0ba;
-  --ti:rgba(255,255,255,0.90);--ti2:rgba(255,255,255,0.55);--ti3:rgba(255,255,255,0.30);
-  --sh-sm:0 2px 12px rgba(9,21,42,0.07);
-  --sh-md:0 6px 28px rgba(9,21,42,0.12);
-  --sh-lg:0 16px 56px rgba(9,21,42,0.18);
-  --r4:4px;--r8:8px;--r12:12px;
-  --nav-h:68px;--sv:88px;
-}
+  :root {
+    --primary: #0B3C5D;
+    --secondary: #00A6ED;
+    --accent: #FF882F;
+    --bg: #F7F9FB;
+    --text: #1A1A1A;
+    --text-light: #5a6a7a;
+    --border: #d6e0ea;
+    --card-bg: #ffffff;
+    --dark-bg: #071e30;
+    --dark-mid: #0d2d45;
+    --white: #ffffff;
+  }
 
-/* ═══════════════════════════════
-   RESET
-═══════════════════════════════ */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'IBM Plex Sans',system-ui,sans-serif;color:var(--t1);background:var(--white);overflow-x:hidden;line-height:1.65;-webkit-font-smoothing:antialiased}
-img,svg{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-button{font-family:inherit;cursor:pointer;border:none;background:none}
-ul{list-style:none}
-:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:3px}
-::-webkit-scrollbar{width:5px}
-::-webkit-scrollbar-track{background:var(--off)}
-::-webkit-scrollbar-thumb{background:var(--cyan);border-radius:99px}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ═══════════════════════════════
-   LAYOUT
-═══════════════════════════════ */
-.W{max-width:1280px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
-.S{padding:var(--sv) 0}
-.S--dk{background:var(--navy);color:var(--ti)}
-.S--off{background:var(--off)}
+  html { scroll-behavior: smooth; }
 
-/* ═══════════════════════════════
-   TYPOGRAPHY
-═══════════════════════════════ */
-.EB{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px;
-}
-.EB::before{content:'';width:20px;height:2px;background:var(--cyan);border-radius:1px;flex-shrink:0}
-.EB-inv{color:rgba(255,255,255,0.42)}
-.EB-inv::before{background:rgba(255,255,255,0.28)}
-h2.SH{font-size:clamp(24px,3.8vw,44px);font-weight:700;line-height:1.12;letter-spacing:-.025em}
-h2.SH em{font-style:normal;color:var(--cyan)}
-.SS{font-size:clamp(14px,1.5vw,17px);color:var(--t2);line-height:1.75;max-width:520px;margin-top:14px}
-.SS-inv{color:var(--ti2)}
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
 
-/* ═══════════════════════════════
-   BUTTONS
-═══════════════════════════════ */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  font-family:'IBM Plex Sans',sans-serif;font-size:14px;font-weight:600;letter-spacing:.03em;
-  border-radius:var(--r4);padding:13px 26px;transition:all .22s ease;white-space:nowrap;
-  -webkit-tap-highlight-color:transparent;
-}
-.btn svg{flex-shrink:0;transition:transform .2s}
-.btn:hover svg{transform:translateX(3px)}
-.btn-p{background:var(--cyan);color:var(--navy)}
-.btn-p:hover{background:#1de0ec;box-shadow:0 6px 24px rgba(0,205,217,.4);transform:translateY(-2px)}
-.btn-p:active{transform:none;box-shadow:none}
-.btn-g{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.28)}
-.btn-g:hover{border-color:var(--cyan);color:var(--cyan);background:rgba(0,205,217,.07)}
-.btn-gd{background:transparent;color:var(--t1);border:1.5px solid var(--border)}
-.btn-gd:hover{border-color:var(--cyan);color:var(--cyan-dark)}
+  /* TYPOGRAPHY */
+  h1, h2, h3, h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+  }
 
-/* ═══════════════════════════════
-   SCROLL PROGRESS
-═══════════════════════════════ */
-#prog{position:fixed;top:0;left:0;z-index:2000;height:2px;width:0;background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
-#btt{
-  position:fixed;bottom:76px;right:18px;z-index:700;
-  width:40px;height:40px;border-radius:50%;
-  background:var(--navy);border:1.5px solid rgba(255,255,255,.15);
-  color:var(--white);font-size:16px;
-  display:none;align-items:center;justify-content:center;
-  cursor:pointer;transition:all .25s;box-shadow:0 4px 16px rgba(0,0,0,.3);
-}
-#btt:hover{background:var(--cyan);color:var(--navy);border-color:var(--cyan)}
-#btt.show{display:flex}
+  /* PLACEHOLDER IMAGES */
+  .placeholder-img {
+    background: linear-gradient(135deg, #c8d8e8 0%, #a8bdd0 50%, #8ca8be 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .placeholder-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 12px),
+      repeating-linear-gradient(-45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 12px);
+  }
+  .placeholder-img .label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(11,60,93,0.6);
+    text-align: center;
+    padding: 12px;
+    background: rgba(255,255,255,0.55);
+    border: 1px dashed rgba(11,60,93,0.25);
+    border-radius: 4px;
+    max-width: 80%;
+    z-index: 1;
+  }
+  .placeholder-img .icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 6px;
+    opacity: 0.5;
+  }
 
-/* ═══════════════════════════════
-   NAV
-═══════════════════════════════ */
-#nav{
-  position:fixed;top:0;left:0;right:0;z-index:1000;
-  background:rgba(9,21,42,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border-d);transition:box-shadow .3s;
-}
-#nav.scrolled{box-shadow:0 4px 40px rgba(0,0,0,.4)}
-.nw{
-  display:flex;align-items:center;justify-content:space-between;
-  height:var(--nav-h);max-width:1280px;margin:0 auto;
-  padding:0 clamp(16px,4vw,48px);
-}
-.nlogo{display:flex;align-items:center;gap:11px;flex-shrink:0}
-.nmark{
-  width:38px;height:38px;background:var(--cyan);border-radius:var(--r4);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;
-  color:var(--navy);letter-spacing:-.04em;
-}
-.ntext strong{display:block;font-size:14.5px;font-weight:700;color:var(--white);letter-spacing:.02em;line-height:1.1}
-.ntext small{display:block;font-size:9.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:.12em;color:var(--t3);margin-top:2px}
-.nlinks{display:flex;align-items:center;gap:2px}
-.nlinks a{
-  color:rgba(255,255,255,.65);font-size:13.5px;font-weight:500;
-  padding:8px 13px;border-radius:var(--r4);transition:color .2s,background .2s;
-}
-.nlinks a:hover,.nlinks a.active{color:var(--white);background:rgba(255,255,255,.08)}
-.nr{display:flex;align-items:center;gap:14px}
-.ndl{color:rgba(255,255,255,.5);font-size:13px;display:flex;align-items:center;gap:6px;transition:color .2s}
-.ndl:hover{color:var(--cyan)}
-.nr .btn-p{padding:10px 18px;font-size:13px}
+  /* NAVIGATION */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: rgba(7,30,48,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,166,237,0.15);
+    transition: all 0.3s;
+  }
+  nav.scrolled {
+    background: rgba(7,30,48,0.99);
+    box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+  }
+  .nav-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 42px; height: 42px;
+    background: rgba(255,255,255,0.06);
+    border: 1.5px dashed rgba(0,166,237,0.5);
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-mark::after {
+    content: '42×42';
+    font-size: 8px;
+    font-weight: 700;
+    color: rgba(0,166,237,0.7);
+    letter-spacing: 0.04em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    white-space: pre;
+  }
+  .logo-mark svg { display: none; }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+  .logo-name .logo-placeholder-tag {
+    display: inline-block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(0,166,237,0.8);
+    background: rgba(0,166,237,0.1);
+    border: 1px dashed rgba(0,166,237,0.35);
+    padding: 2px 7px;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-left: 6px;
+    line-height: 1.6;
+  }
+  .logo-sub {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--secondary);
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 2px; left: 50%; right: 50%;
+    height: 2px;
+    background: var(--secondary);
+    transition: left 0.3s, right 0.3s;
+  }
+  .nav-links a:hover { color: white; }
+  .nav-links a:hover::after { left: 16px; right: 16px; }
+  .nav-cta {
+    background: var(--accent) !important;
+    color: var(--dark-bg) !important;
+    padding: 10px 22px !important;
+    border-radius: 3px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.06em !important;
+    transition: background 0.2s, transform 0.2s !important;
+  }
+  .nav-cta:hover { background: #e8750a !important; transform: translateY(-1px); }
+  .nav-cta::after { display: none !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+  .hamburger span { display: block; width: 26px; height: 2px; background: white; transition: all 0.3s; }
 
-/* hamburger */
-.ham{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;-webkit-tap-highlight-color:transparent}
-.ham span{display:block;width:22px;height:2px;background:var(--white);border-radius:1px;transition:all .3s;transform-origin:center}
-.ham.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.ham.open span:nth-child(2){opacity:0;transform:scaleX(0)}
-.ham.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  /* HERO */
+  #home {
+    min-height: 100vh;
+    background: var(--dark-bg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 72px;
+  }
+  #home::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse 60% 70% at 70% 50%, rgba(0,166,237,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 20% 80%, rgba(11,60,93,0.5) 0%, transparent 60%);
+  }
+  .hero-grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(0,166,237,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,166,237,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,166,237,0.12);
+    border: 1px solid rgba(0,166,237,0.3);
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+  }
+  .hero-badge::before { content: '●'; font-size: 7px; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .hero-title {
+    font-size: clamp(42px, 5.5vw, 76px);
+    font-weight: 800;
+    color: white;
+    line-height: 1.0;
+    margin-bottom: 24px;
+    letter-spacing: 0.01em;
+  }
+  .hero-title .highlight { color: var(--secondary); }
+  .hero-title .accent { color: var(--accent); }
+  .hero-sub {
+    font-size: 17px;
+    color: rgba(255,255,255,0.6);
+    max-width: 520px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+  .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 56px; }
+  .btn-primary {
+    background: var(--secondary);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary:hover { background: #008fcc; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,166,237,0.35); }
+  .btn-outline {
+    background: transparent;
+    color: white;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    padding: 15px 32px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: border-color 0.2s, color 0.2s, transform 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+  .btn-accent {
+    background: var(--accent);
+    color: var(--dark-bg);
+    border: none;
+    padding: 15px 32px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-accent:hover { background: #e8750a; transform: translateY(-2px); }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .stat-item {
+    padding: 20px 20px;
+    background: rgba(255,255,255,0.03);
+    text-align: center;
+  }
+  .stat-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    display: block;
+  }
+  .stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-top: 4px;
+    display: block;
+  }
+  .hero-visual {
+    position: relative;
+  }
+  .hero-img-main {
+    width: 100%;
+    height: 520px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,166,237,0.2);
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-img-badge {
+    position: absolute;
+    bottom: 20px; left: 20px;
+    background: rgba(7,30,48,0.9);
+    border: 1px solid rgba(0,166,237,0.3);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 3px;
+    z-index: 2;
+  }
+  .hero-img-badge .badge-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+    display: block;
+  }
+  .hero-img-badge .badge-sub {
+    font-size: 11px;
+    color: var(--secondary);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .hero-corner-accent {
+    position: absolute;
+    top: -12px; right: -12px;
+    width: 80px; height: 80px;
+    border-top: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+    border-radius: 0 6px 0 0;
+  }
+  .hero-corner-accent2 {
+    position: absolute;
+    bottom: -12px; left: -12px;
+    width: 80px; height: 80px;
+    border-bottom: 3px solid var(--secondary);
+    border-left: 3px solid var(--secondary);
+    border-radius: 0 0 0 6px;
+  }
 
-/* mobile drawer */
-.mnav{
-  display:none;flex-direction:column;
-  background:var(--navy-mid);border-top:1px solid var(--border-d);
-  max-height:0;overflow:hidden;
-  transition:max-height .4s cubic-bezier(.4,0,.2,1);
-}
-.mnav.open{max-height:600px}
-.mnav a{
-  display:block;color:rgba(255,255,255,.72);font-size:15px;
-  padding:14px clamp(16px,4vw,48px);
-  border-bottom:1px solid rgba(255,255,255,.05);transition:color .2s,background .2s;
-}
-.mnav a:hover{color:var(--white);background:rgba(255,255,255,.04)}
-.mnav .mc{margin:16px clamp(16px,4vw,48px) 20px;border-radius:var(--r4)}
+  /* SECTION STYLES */
+  section { padding: 96px 0; }
+  .container { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 28px; height: 2px;
+    background: var(--secondary);
+  }
+  .section-title {
+    font-size: clamp(34px, 4vw, 56px);
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .section-title.light { color: white; }
+  .section-sub {
+    font-size: 16.5px;
+    color: var(--text-light);
+    max-width: 600px;
+    line-height: 1.7;
+  }
+  .section-sub.light { color: rgba(255,255,255,0.6); }
+  .section-header { margin-bottom: 60px; }
 
-/* ═══════════════════════════════
-   HERO
-═══════════════════════════════ */
-#hero{
-  min-height:100svh;background:var(--navy);
-  display:flex;align-items:center;
-  position:relative;overflow:hidden;
-  padding:calc(var(--nav-h)+48px) 0 64px;
-}
-.hbg{position:absolute;inset:0;pointer-events:none}
-.hgrid{
-  position:absolute;inset:0;
-  background-image:linear-gradient(rgba(0,205,217,.045) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(0,205,217,.045) 1px,transparent 1px);
-  background-size:60px 60px;
-  animation:gs 50s linear infinite;
-}
-@keyframes gs{0%{background-position:0 0}100%{background-position:60px 60px}}
-.hgl{
-  position:absolute;width:min(700px,130vw);aspect-ratio:1/1;
-  background:radial-gradient(circle,rgba(0,205,217,.11) 0%,transparent 68%);
-  top:-15%;right:-10%;border-radius:50%;
-  animation:br 9s ease-in-out infinite;
-}
-.hgl2{
-  position:absolute;width:min(500px,100vw);aspect-ratio:1/1;
-  background:radial-gradient(circle,rgba(0,80,255,.07) 0%,transparent 68%);
-  bottom:0;left:-5%;border-radius:50%;
-  animation:br 13s ease-in-out infinite reverse;
-}
-@keyframes br{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+  /* CLIENTS */
+  #clients {
+    padding: 40px 0;
+    background: white;
+    border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+  }
+  .clients-inner { 
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .clients-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    white-space: nowrap;
+    margin-right: 16px;
+  }
+  .client-logo {
+    width: 140px;
+    height: 56px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: default;
+  }
+  .client-logo:hover { border-color: var(--secondary); box-shadow: 0 2px 12px rgba(0,166,237,0.12); }
+  .client-logo span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    text-align: center;
+    padding: 4px;
+  }
 
-.hwrap{
-  max-width:1280px;margin:0 auto;padding:0 clamp(16px,4vw,48px);
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:clamp(32px,5vw,72px);align-items:center;
-  position:relative;z-index:2;
-}
-.heb{
-  display:flex;align-items:center;gap:12px;
-  font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:22px;
-}
-.heb::before{content:'';width:28px;height:1.5px;background:var(--cyan)}
-h1{
-  font-size:clamp(30px,5vw,60px);font-weight:700;
-  line-height:1.07;letter-spacing:-.03em;color:var(--white);margin-bottom:18px;
-}
-h1 .hl{color:var(--cyan);display:block}
-.hd{font-size:clamp(14px,1.4vw,17px);color:rgba(255,255,255,.62);line-height:1.78;margin-bottom:32px;max-width:480px}
-.hbtns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px}
-.hstats{
-  display:flex;gap:clamp(14px,3vw,36px);
-  padding-top:28px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap;
-}
-.hsn{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:clamp(20px,2.5vw,30px);font-weight:600;color:var(--white);line-height:1;
-}
-.hsn span{color:var(--cyan)}
-.hsl{font-size:11px;color:rgba(255,255,255,.38);letter-spacing:.07em;text-transform:uppercase;margin-top:5px}
+  /* PRODUCTS */
+  #products { background: var(--bg); }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .product-card {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+  }
+  .product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(11,60,93,0.12); border-color: var(--secondary); }
+  .product-card-img {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-card-img .placeholder-img { height: 100%; width: 100%; }
+  .product-card-tag {
+    position: absolute;
+    top: 14px; left: 14px;
+    background: var(--primary);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+  .product-card-body { padding: 24px 26px 26px; }
+  .product-card-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+  }
+  .product-card-desc { font-size: 14px; color: var(--text-light); line-height: 1.65; margin-bottom: 20px; }
+  .product-card-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .spec-chip {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text-light);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+  }
+  .product-card-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--secondary);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.2s;
+  }
+  .product-card:hover .product-card-link { gap: 10px; }
+  .arrow { font-size: 16px; }
 
-/* AHU card */
-.hv{position:relative}
-.ac{
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.09);border-radius:var(--r12);overflow:hidden;
-}
-.acb{
-  position:absolute;top:-14px;right:20px;z-index:3;
-  background:var(--cyan);color:var(--navy);
-  font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;
-  padding:6px 14px;border-radius:3px;letter-spacing:.1em;
-}
-.adw{padding:28px 24px 16px;background:linear-gradient(145deg,#0d1e3a 0%,#091528 100%)}
-.am{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:16px 22px;border-top:1px solid rgba(255,255,255,.07);
-}
-.aml{font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--t3);letter-spacing:.09em;text-transform:uppercase}
-.amn{font-size:14px;font-weight:600;color:var(--white);margin-top:3px}
-.ab{
-  font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--cyan);
-  border:1px solid rgba(0,205,217,.3);padding:4px 10px;border-radius:2px;letter-spacing:.08em;flex-shrink:0;
-}
-.dp{
-  position:absolute;background:rgba(9,21,42,.92);
-  border:1px solid rgba(0,205,217,.25);border-radius:6px;
-  padding:8px 14px;backdrop-filter:blur(8px);
-}
-.dp .dv{font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:var(--cyan)}
-.dp .dl{font-size:10px;color:var(--ti2);margin-top:1px}
-.dp1{bottom:80px;left:-18px}
-.dp2{top:40px;right:-14px}
+  /* INDUSTRIES */
+  #industries { background: white; }
+  .industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .industry-item {
+    padding: 40px 32px;
+    background: white;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s;
+    cursor: default;
+  }
+  .industry-item:hover { background: var(--primary); }
+  .industry-item:hover .industry-icon { background: rgba(0,166,237,0.2); color: var(--secondary); }
+  .industry-item:hover .industry-name { color: white; }
+  .industry-item:hover .industry-desc { color: rgba(255,255,255,0.6); }
+  .industry-icon {
+    width: 52px; height: 52px;
+    background: var(--bg);
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: background 0.3s, color 0.3s;
+    color: var(--primary);
+  }
+  .industry-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+    transition: color 0.3s;
+  }
+  .industry-desc { font-size: 13.5px; color: var(--text-light); line-height: 1.6; transition: color 0.3s; }
 
-/* ═══════════════════════════════
-   TRUST
-═══════════════════════════════ */
-#trust{padding:22px 0;background:var(--off);border-bottom:1px solid var(--border)}
-.tr{display:flex;align-items:center;gap:clamp(12px,3vw,40px);flex-wrap:wrap}
-.trlbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);flex-shrink:0;white-space:nowrap}
-.trdiv{width:1px;height:20px;background:var(--border);flex-shrink:0}
-.trlogos{display:flex;align-items:center;gap:clamp(16px,2.5vw,32px);flex-wrap:wrap}
-.trlogo{font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--t2);text-transform:uppercase;opacity:.65;transition:opacity .2s}
-.trlogo:hover{opacity:1}
+  /* WHY ASTRA */
+  #why { background: var(--dark-bg); position: relative; overflow: hidden; }
+  #why::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,166,237,0.06) 0%, transparent 70%);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .why-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .why-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    padding: 28px 24px;
+    transition: background 0.3s, border-color 0.3s, transform 0.3s;
+  }
+  .why-card:hover { background: rgba(0,166,237,0.08); border-color: rgba(0,166,237,0.25); transform: translateY(-4px); }
+  .why-card-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+  .why-card-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+  .why-card-desc { font-size: 13.5px; color: rgba(255,255,255,0.5); line-height: 1.65; }
+  .why-visual { position: relative; }
+  .why-img-stack { position: relative; }
+  .why-img-main { width: 100%; height: 420px; border-radius: 6px; overflow: hidden; }
+  .why-img-mini {
+    position: absolute;
+    bottom: -28px; right: -28px;
+    width: 200px; height: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 4px solid var(--dark-bg);
+  }
+  .experience-badge {
+    position: absolute;
+    top: 20px; left: -20px;
+    background: var(--accent);
+    padding: 16px 20px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .experience-badge .num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--dark-bg);
+    line-height: 1;
+    display: block;
+  }
+  .experience-badge .txt {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(7,30,48,0.7);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 2px;
+  }
 
-/* ═══════════════════════════════
-   PRODUCTS
-═══════════════════════════════ */
-.phd{
-  display:flex;justify-content:space-between;align-items:flex-end;
-  gap:20px;margin-bottom:clamp(28px,4vw,52px);flex-wrap:wrap;
-}
-.pgrid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(250px,100%),1fr));
-  gap:1px;background:var(--border);border:1px solid var(--border);
-  border-radius:var(--r8);overflow:hidden;
-}
-.pc{
-  background:var(--white);padding:26px 24px 28px;
-  position:relative;overflow:hidden;transition:background .25s;cursor:pointer;
-}
-.pc::after{
-  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
-  background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .3s ease;
-}
-.pc:hover{background:var(--off)}
-.pc:hover::after{transform:scaleX(1)}
-.pc:hover .pa{transform:translate(4px,-4px)}
-.pn{position:absolute;top:20px;right:22px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;color:var(--t3);letter-spacing:.06em}
-.pi{
-  width:46px;height:46px;border-radius:6px;background:var(--navy);
-  display:flex;align-items:center;justify-content:center;margin-bottom:16px;transition:background .3s;
-}
-.pc:hover .pi{background:var(--cyan-dark)}
-.pm{font-size:15.5px;font-weight:700;color:var(--t1);margin-bottom:8px;line-height:1.3;padding-right:32px}
-.pd{font-size:13px;color:var(--t2);line-height:1.7;margin-bottom:16px}
-.pa{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:var(--cyan);letter-spacing:.05em;transition:transform .2s}
+  /* MANUFACTURING */
+  #manufacturing { background: var(--bg); }
+  .mfg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .mfg-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+  .mfg-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 24px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--secondary);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .mfg-item:hover { box-shadow: 0 8px 32px rgba(11,60,93,0.08); transform: translateX(4px); }
+  .mfg-item-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--border);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 40px;
+  }
+  .mfg-item-content {}
+  .mfg-item-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 6px;
+  }
+  .mfg-item-desc { font-size: 13.5px; color: var(--text-light); line-height: 1.6; }
+  .mfg-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .mfg-img { border-radius: 6px; overflow: hidden; }
+  .mfg-img:first-child { grid-column: span 2; height: 240px; }
+  .mfg-img:not(:first-child) { height: 160px; }
 
-/* ═══════════════════════════════
-   INDUSTRIES
-═══════════════════════════════ */
-#ind{position:relative;overflow:hidden}
-.indbg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,205,217,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,205,217,.03) 1px,transparent 1px);background-size:48px 48px}
-#ind .W{position:relative;z-index:2}
-.igrid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(190px,100%),1fr));
-  gap:10px;margin-top:clamp(28px,4vw,52px);
-}
-.ic{
-  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-  border-radius:var(--r8);padding:clamp(18px,3vw,26px);
-  cursor:pointer;transition:all .28s;
-  display:flex;flex-direction:column;justify-content:space-between;
-  min-height:clamp(150px,18vw,196px);
-}
-.ic:hover{background:rgba(0,205,217,.07);border-color:rgba(0,205,217,.3);transform:translateY(-5px);box-shadow:0 16px 48px rgba(0,0,0,.28)}
-.ii{font-size:clamp(26px,3vw,34px);margin-bottom:10px}
-.in2{font-size:clamp(13px,1.5vw,14.5px);font-weight:700;color:var(--white);line-height:1.3;margin-bottom:5px}
-.is{font-size:11px;color:rgba(255,255,255,.38);letter-spacing:.04em}
-.ia{font-size:16px;color:rgba(255,255,255,.2);margin-top:10px;transition:color .2s;align-self:flex-end}
-.ic:hover .ia{color:var(--cyan)}
+  /* PROJECTS */
+  #projects { background: white; }
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .project-card {
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+  .project-card-img { height: 300px; position: relative; }
+  .project-card-img .placeholder-img { height: 100%; width: 100%; }
+  .project-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(7,30,48,0.9) 0%, rgba(7,30,48,0.1) 60%, transparent 100%);
+    transition: opacity 0.3s;
+  }
+  .project-card:hover .project-card-overlay { opacity: 0.97; }
+  .project-card-info {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px;
+  }
+  .project-card-category {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .project-card-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  .project-card-meta { font-size: 12.5px; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 8px; }
 
-/* ═══════════════════════════════
-   WHY
-═══════════════════════════════ */
-#why .wg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:center}
-.wf{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:clamp(24px,3vw,40px)}
-.wfc{
-  padding:20px 18px;background:var(--white);border-radius:var(--r8);
-  border-left:3px solid transparent;box-shadow:var(--sh-sm);transition:all .28s;
-}
-.wfc:hover{border-left-color:var(--cyan);transform:translateX(5px);box-shadow:var(--sh-md)}
-.wfi{font-size:24px;margin-bottom:9px}
-.wft{font-size:13px;font-weight:700;color:var(--t1);margin-bottom:5px}
-.wfd{font-size:12.5px;color:var(--t2);line-height:1.65}
-.wvis{
-  background:var(--navy);border-radius:var(--r12);overflow:hidden;
-  aspect-ratio:4/3;position:relative;display:flex;align-items:center;justify-content:center;
-}
-.wcerts{position:absolute;bottom:0;left:0;right:0;display:flex;gap:2px}
-.cb{
-  flex:1;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);
-  padding:11px 6px;text-align:center;border-top:1px solid rgba(255,255,255,.08);
-}
-.cv{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:var(--cyan);letter-spacing:.06em}
-.cl{font-size:9.5px;color:rgba(255,255,255,.33);margin-top:3px}
+  /* CERTIFICATIONS */
+  #certifications { background: var(--bg); padding: 64px 0; }
+  .certs-row { display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; }
+  .cert-badge {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 20px 28px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .cert-badge:hover { border-color: var(--secondary); box-shadow: 0 4px 20px rgba(0,166,237,0.1); }
+  .cert-icon {
+    width: 48px; height: 48px;
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .cert-name { font-size: 13px; font-weight: 700; color: var(--primary); letter-spacing: 0.04em; }
+  .cert-body { font-size: 11.5px; color: var(--text-light); margin-top: 2px; }
 
-/* ═══════════════════════════════
-   CASE STUDIES
-═══════════════════════════════ */
-.cshd{margin-bottom:clamp(24px,3vw,44px)}
-.csgrid{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:18px}
-.csc{
-  background:var(--navy-card);border-radius:var(--r8);overflow:hidden;
-  cursor:pointer;transition:transform .28s,box-shadow .28s;display:flex;flex-direction:column;
-}
-.csc:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.38)}
-.csi{
-  position:relative;overflow:hidden;
-  background:linear-gradient(140deg,#0d1e3a,#091528);
-  display:flex;align-items:center;justify-content:center;
-}
-.csc:first-child .csi{height:clamp(150px,18vw,230px)}
-.csc:not(:first-child) .csi{height:clamp(120px,13vw,180px)}
-.cstag{
-  position:absolute;top:12px;left:12px;
-  background:rgba(0,205,217,.92);color:var(--navy);
-  font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;
-  padding:3px 9px;border-radius:2px;letter-spacing:.1em;text-transform:uppercase;
-}
-.csb{padding:clamp(16px,2vw,22px);flex:1;display:flex;flex-direction:column}
-.cst{font-size:clamp(13px,1.5vw,15.5px);font-weight:700;color:var(--white);margin-bottom:7px;line-height:1.35}
-.csd{font-size:12px;color:rgba(255,255,255,.48);line-height:1.7;flex:1;margin-bottom:14px}
-.csm{display:flex;gap:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.07);flex-wrap:wrap}
-.cmv{font-family:'IBM Plex Mono',monospace;font-size:clamp(16px,2vw,21px);font-weight:700;color:var(--cyan)}
-.cml{font-size:10px;color:rgba(255,255,255,.36);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+  /* CTA BANNER */
+  #cta {
+    background: linear-gradient(135deg, var(--primary) 0%, #0d4c73 50%, var(--dark-bg) 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+  #cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 60px);
+  }
+  .cta-inner { text-align: center; position: relative; z-index: 1; }
+  .cta-title {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+  .cta-sub { font-size: 17px; color: rgba(255,255,255,0.6); margin-bottom: 40px; }
+  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
-/* ═══════════════════════════════
-   SPECS TABLE
-═══════════════════════════════ */
-#specs{position:relative;overflow:hidden}
-.specsbg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,205,217,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,205,217,.03) 1px,transparent 1px);background-size:48px 48px}
-#specs .W{position:relative;z-index:2}
-.to{
-  margin-top:clamp(24px,3vw,40px);overflow-x:auto;-webkit-overflow-scrolling:touch;
-  border-radius:var(--r8);border:1px solid rgba(255,255,255,.09);
-}
-.sth{display:none;text-align:center;margin-top:10px;font-size:11px;font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.28);letter-spacing:.08em}
-table{width:100%;border-collapse:collapse;min-width:560px}
-thead tr{border-bottom:1.5px solid rgba(0,205,217,.25)}
-thead th{text-align:left;padding:13px 17px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);white-space:nowrap}
-thead th:first-child{color:rgba(255,255,255,.32)}
-tbody tr{border-bottom:1px solid rgba(255,255,255,.05);transition:background .2s}
-tbody tr:hover{background:rgba(255,255,255,.03)}
-tbody td{padding:12px 17px;font-size:13px;color:rgba(255,255,255,.65);white-space:nowrap}
-tbody td:first-child{color:rgba(255,255,255,.35);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em}
-.sv{font-weight:600;color:var(--white)}
-.stag{background:rgba(0,205,217,.12);color:var(--cyan);font-family:'IBM Plex Mono',monospace;font-size:10px;padding:2px 7px;border-radius:2px;letter-spacing:.06em;white-space:nowrap}
-.sacts{display:flex;gap:12px;flex-wrap:wrap;margin-top:clamp(20px,3vw,32px)}
+  /* PRODUCT PAGE */
+  .page-hero {
+    background: var(--dark-bg);
+    padding: 140px 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: 
+      repeating-linear-gradient(90deg, rgba(0,166,237,0.03) 0, rgba(0,166,237,0.03) 1px, transparent 1px, transparent 80px);
+  }
+  .page-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+    letter-spacing: 0.06em;
+  }
+  .breadcrumb a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--secondary); }
+  .breadcrumb span { color: rgba(255,255,255,0.25); }
+  .page-hero-title { font-size: clamp(40px, 5vw, 72px); color: white; font-weight: 800; margin-bottom: 20px; }
+  .page-hero-sub { font-size: 16px; color: rgba(255,255,255,0.55); max-width: 500px; line-height: 1.7; }
 
-/* ═══════════════════════════════
-   RESOURCES
-═══════════════════════════════ */
-.rgrid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(270px,100%),1fr));
-  gap:18px;margin-top:clamp(24px,3vw,44px);
-}
-.rc{
-  border:1px solid var(--border);border-radius:var(--r8);
-  padding:clamp(18px,2.5vw,26px);background:var(--white);
-  cursor:pointer;transition:all .28s;position:relative;overflow:hidden;
-}
-.rc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.rc:hover{transform:translateY(-5px);box-shadow:var(--sh-lg);border-color:transparent}
-.rc:hover::before{transform:scaleX(1)}
-.rt{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:2px;margin-bottom:12px}
-.rt-p{background:rgba(220,50,50,.09);color:#c93232}
-.rt-g{background:rgba(0,100,255,.08);color:#1a6aff}
-.rt-a{background:rgba(0,205,217,.09);color:var(--cyan-dark)}
-.rtl{font-size:14px;font-weight:700;color:var(--t1);margin-bottom:7px;line-height:1.38}
-.rde{font-size:13px;color:var(--t2);line-height:1.68;margin-bottom:12px}
-.rct{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:var(--cyan-dark);letter-spacing:.06em;transition:gap .2s}
-.rc:hover .rct{gap:10px}
+  /* PRODUCT SPECS TABLE */
+  .specs-table { width: 100%; border-collapse: collapse; background: white; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+  .specs-table th {
+    background: var(--primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    text-align: left;
+  }
+  .specs-table td { padding: 14px 20px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .specs-table tr:last-child td { border-bottom: none; }
+  .specs-table tr:nth-child(even) td { background: var(--bg); }
+  .specs-table td:first-child { font-weight: 600; color: var(--primary); width: 40%; }
 
-/* ═══════════════════════════════
-   CONTACT
-═══════════════════════════════ */
-#contact .cg{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(24px,5vw,72px);align-items:start}
-.cways{display:flex;flex-direction:column;gap:11px;margin-top:28px}
-.cw{
-  display:flex;align-items:center;gap:13px;
-  padding:14px 16px;background:var(--white);border:1px solid var(--border);
-  border-radius:var(--r8);text-decoration:none;transition:all .22s;
-  -webkit-tap-highlight-color:transparent;
-}
-.cw:hover,.cw:focus-visible{border-color:var(--cyan);box-shadow:0 4px 20px rgba(0,205,217,.15)}
-.cw:active{transform:scale(.98)}
-.cwi{width:40px;height:40px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
-.cwi-ph{background:rgba(0,100,255,.1)}
-.cwi-em{background:rgba(0,205,217,.1)}
-.cwi-wa{background:rgba(37,211,102,.1)}
-.cwl{font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:.08em;font-family:'IBM Plex Mono',monospace}
-.cwv{font-size:13.5px;font-weight:600;color:var(--t1);margin-top:2px}
-.acard{margin-top:18px;padding:16px;background:var(--white);border:1px solid var(--border);border-radius:var(--r8)}
-.albl{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--t3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px}
-.atxt{font-size:13px;color:var(--t2);line-height:1.85}
+  /* QUOTE FORM */
+  .quote-form-section { background: var(--dark-bg); padding: 80px 0; }
+  .quote-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 13px 16px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    -webkit-appearance: none;
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: rgba(255,255,255,0.25); }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--secondary); background: rgba(0,166,237,0.07); }
+  .form-group select option { background: var(--dark-bg); color: white; }
+  .form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
-/* Form */
-.fc{background:var(--white);border:1px solid var(--border);border-radius:var(--r12);padding:clamp(22px,4vw,34px);box-shadow:var(--sh-md)}
-.ftit{font-size:17px;font-weight:700;color:var(--t1);margin-bottom:20px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:13px}
-.fg{display:flex;flex-direction:column;gap:5px;margin-bottom:13px}
-label{font-size:11px;font-weight:500;color:var(--t2);letter-spacing:.07em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace}
-input,select,textarea{
-  padding:11px 13px;border:1.5px solid var(--border);border-radius:var(--r4);
-  font-family:'IBM Plex Sans',sans-serif;
-  /* Prevent iOS zoom — must be ≥16px */
-  font-size:16px;
-  color:var(--t1);background:var(--white);
-  transition:border-color .2s,box-shadow .2s;outline:none;
-  -webkit-appearance:none;appearance:none;width:100%;
-}
-input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,205,217,.14)}
-input.err,select.err,textarea.err{border-color:#e53e3e}
-.ferr{font-size:11px;color:#e53e3e;margin-top:3px;display:none}
-select{
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238da0ba' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 13px center;
-  padding-right:34px;cursor:pointer;
-}
-textarea{resize:vertical;min-height:92px}
-.fmsg{font-size:13px;margin-top:10px;min-height:18px}
-.fmsg.ok{color:var(--cyan-dark)}
-.fmsg.fail{color:#e53e3e}
+  /* ABOUT PAGE */
+  .about-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .about-text h2 { font-size: clamp(32px, 3.5vw, 50px); font-weight: 800; color: var(--primary); margin-bottom: 24px; }
+  .about-text p { font-size: 15.5px; color: var(--text-light); line-height: 1.75; margin-bottom: 18px; }
+  .about-values { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+  .value-item { display: flex; align-items: flex-start; gap: 14px; }
+  .value-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+  .value-text { font-size: 14px; font-weight: 600; color: var(--text); }
 
-/* ═══════════════════════════════
-   FOOTER
-═══════════════════════════════ */
-footer{background:var(--navy);padding:clamp(44px,6vw,68px) 0 32px}
-.ftop{
-  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;
-  gap:clamp(20px,4vw,52px);
-  padding-bottom:clamp(32px,4vw,48px);
-  border-bottom:1px solid rgba(255,255,255,.07);
-}
-.fbrand .fa{font-size:13px;color:rgba(255,255,255,.38);line-height:1.8;max-width:260px;margin-top:14px}
-.fbrand .fadd{font-size:12px;font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.28);line-height:1.9;margin-top:12px}
-.fch{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.26);margin-bottom:17px}
-.flinks li+li{margin-top:9px}
-.flinks a{font-size:13px;color:rgba(255,255,255,.48);transition:color .2s}
-.flinks a:hover{color:var(--cyan)}
-.fbot{display:flex;justify-content:space-between;align-items:center;padding-top:26px;flex-wrap:wrap;gap:12px}
-.fcopy{font-size:11px;font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.22)}
-.fcerts{display:flex;gap:7px;flex-wrap:wrap}
-.fcert{font-size:10px;font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.26);border:1px solid rgba(255,255,255,.1);padding:3px 8px;border-radius:2px;letter-spacing:.07em}
+  /* CONTACT PAGE */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: start; }
+  .contact-info { display: flex; flex-direction: column; gap: 24px; }
+  .contact-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px 28px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: border-color 0.2s;
+  }
+  .contact-card:hover { border-color: var(--secondary); }
+  .contact-card-icon {
+    width: 44px; height: 44px;
+    background: var(--bg);
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    color: var(--primary);
+  }
+  .contact-card-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 6px; }
+  .contact-card-val { font-size: 15px; font-weight: 600; color: var(--primary); line-height: 1.5; }
+  .map-placeholder {
+    height: 260px;
+    background: linear-gradient(135deg, #d0dde8 0%, #b8ccd8 100%);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .map-placeholder::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: 
+      repeating-linear-gradient(0deg, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 1px, transparent 1px, transparent 32px),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 1px, transparent 1px, transparent 32px);
+  }
+  .map-label {
+    background: rgba(255,255,255,0.85);
+    border: 1px dashed rgba(11,60,93,0.3);
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary);
+    position: relative;
+    z-index: 1;
+  }
 
-/* ═══════════════════════════════
-   MOBILE FLOAT BAR
-═══════════════════════════════ */
-.mfloat{
-  display:none;
-  position:fixed;bottom:0;left:0;right:0;z-index:800;
-  background:rgba(9,21,42,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  border-top:1px solid rgba(255,255,255,.1);
-  padding:10px clamp(14px,4vw,22px) max(10px,env(safe-area-inset-bottom));
-  gap:10px;
-}
-.mfloat a{flex:1;justify-content:center;padding:12px}
+  /* PAGE NAVIGATION */
+  .page-nav-tabs {
+    background: white;
+    border-bottom: 2px solid var(--border);
+    position: sticky;
+    top: 72px;
+    z-index: 100;
+  }
+  .page-nav-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .page-tab {
+    padding: 16px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .page-tab:hover, .page-tab.active { color: var(--primary); border-bottom-color: var(--secondary); }
 
-/* ═══════════════════════════════
-   ANIMATIONS
-═══════════════════════════════ */
-.rev{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
-.rev.in{opacity:1;transform:none}
-.d1{transition-delay:.08s}
-.d2{transition-delay:.16s}
-.d3{transition-delay:.24s}
-.d4{transition-delay:.32s}
+  /* FOOTER */
+  footer {
+    background: var(--dark-bg);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 64px 0 32px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  .footer-brand-desc { font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.7; margin: 20px 0 28px; max-width: 300px; }
+  .footer-contact-item { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: rgba(255,255,255,0.4); margin-bottom: 10px; }
+  .footer-contact-item strong { color: rgba(255,255,255,0.7); }
+  .footer-col-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: color 0.2s, padding-left 0.2s;
+    display: block;
+  }
+  .footer-links a:hover { color: var(--secondary); padding-left: 6px; }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .footer-bottom-text { font-size: 12.5px; color: rgba(255,255,255,0.3); }
+  .footer-bottom-links { display: flex; gap: 20px; }
+  .footer-bottom-links a { font-size: 12.5px; color: rgba(255,255,255,0.3); text-decoration: none; }
+  .footer-bottom-links a:hover { color: var(--secondary); }
 
-/* ═══════════════════════════════
-   TABLET ≤ 1024
-═══════════════════════════════ */
-@media(max-width:1024px){
-  .csgrid{grid-template-columns:1fr 1fr}
-  .csc:first-child{grid-column:1/-1}
-  #why .wg{grid-template-columns:1fr}
-  .wvis{display:none}
-  .ftop{grid-template-columns:1fr 1fr}
-}
+  /* STICKY QUOTE BUTTON */
+  .sticky-quote {
+    position: fixed;
+    right: 24px;
+    bottom: 90px;
+    z-index: 999;
+    background: var(--accent);
+    color: var(--dark-bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(255,136,47,0.4);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border: none;
+  }
+  .sticky-quote:hover { transform: translateX(-4px); box-shadow: 0 6px 28px rgba(255,136,47,0.5); }
+  .whatsapp-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 999;
+    width: 52px; height: 52px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    text-decoration: none;
+    transition: transform 0.2s;
+    border: none;
+  }
+  .whatsapp-btn:hover { transform: scale(1.1); }
 
-/* ═══════════════════════════════
-   MOBILE ≤ 768
-═══════════════════════════════ */
-@media(max-width:768px){
-  :root{--sv:56px}
+  /* PAGE VISIBILITY */
+  .page { display: none; }
+  .page.active { display: block; }
 
-  /* Nav */
-  .nlinks,.nr{display:none}
-  .ham{display:flex}
-  .mnav{display:flex}
+  /* DIVIDER */
+  .divider {
+    width: 60px; height: 3px;
+    background: var(--accent);
+    margin: 20px 0 32px;
+  }
+  .divider.center { margin: 20px auto 32px; }
 
-  /* Hero */
-  .hwrap{grid-template-columns:1fr}
-  .hv{display:none}
-  /* keep both CTAs on mobile */
+  /* SCROLL ANIMATIONS */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s, transform 0.7s;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-  /* Products 2 col */
-  .pgrid{grid-template-columns:1fr 1fr}
-
-  /* Industries 2 col */
-  .igrid{grid-template-columns:1fr 1fr}
-
-  /* Why 1 col */
-  .wf{grid-template-columns:1fr}
-
-  /* Cases 1 col */
-  .csgrid{grid-template-columns:1fr}
-  .csc:first-child{grid-column:auto}
-
-  /* Contact */
-  #contact .cg{grid-template-columns:1fr}
-  .frow{grid-template-columns:1fr}
-
-  /* Footer */
-  .ftop{grid-template-columns:1fr 1fr}
-  .fbot{flex-direction:column;align-items:flex-start;gap:10px}
-
-  /* Table hint */
-  .sth{display:block}
-
-  /* Float bar */
-  .mfloat{display:flex}
-  footer{padding-bottom:clamp(70px,12vw,88px)}
-
-  /* back to top sits above float bar */
-  #btt{bottom:clamp(70px,12vw,88px)}
-}
-
-@media(max-width:480px){
-  h1{font-size:clamp(26px,8vw,36px)}
-  .pgrid{grid-template-columns:1fr}
-  .igrid{grid-template-columns:1fr}
-  .ftop{grid-template-columns:1fr}
-  .trlogos{gap:12px}
-  .dp{display:none}
-}
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .hero-inner, .why-grid, .mfg-grid, .about-intro-grid, .contact-grid, .quote-form-grid { grid-template-columns: 1fr; }
+    .industries-grid { grid-template-columns: repeat(2, 1fr); }
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .page-hero-grid { grid-template-columns: 1fr; }
+    .hero-img-main { height: 360px; }
+    .why-img-mini { display: none; }
+    .experience-badge { left: 0; }
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; position: absolute; top: 72px; left: 0; right: 0; background: var(--dark-bg); flex-direction: column; padding: 20px; gap: 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .nav-links.open { display: flex; }
+    .nav-links a { padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .hamburger { display: flex; }
+    .industries-grid { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: 1fr; }
+    .why-features { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: 1fr; }
+    .about-values { grid-template-columns: 1fr; }
+    .form-grid-2 { grid-template-columns: 1fr; }
+    section { padding: 64px 0; }
+  }
 </style>
 </head>
 <body>
 
-<!-- Progress bar -->
-<div id="prog" role="progressbar" aria-hidden="true"></div>
+<!-- STICKY BUTTONS -->
+<a href="#quote-form" class="sticky-quote" onclick="showPage('contact')">Request Quote</a>
+<a href="https://wa.me/918029909055" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
 
-<!-- Back to top -->
-<button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
-<!-- ══════════ NAV ══════════ -->
-<nav id="nav" role="navigation" aria-label="Main navigation">
-  <div class="nw">
-    <a href="#" class="nlogo" aria-label="Astra Airtech home">
-      <div class="nmark" aria-hidden="true">AA</div>
-      <div class="ntext">
-        <strong>Astra Airtech</strong>
-        <small>HVAC SYSTEMS · EST. 1998</small>
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#" onclick="showPage('home')">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">ASTRA AIRTECH <span class="logo-placeholder-tag">Logo · 160×42px</span></span>
+        <span class="logo-sub">Placeholder – Replace with actual logo (SVG/PNG, transparent bg)</span>
       </div>
     </a>
-
-    <div class="nlinks">
-      <a href="#products">Products</a>
-      <a href="#ind">Industries</a>
-      <a href="#cases">Projects</a>
-      <a href="#resources">Resources</a>
-      <a href="#contact">About</a>
-    </div>
-
-    <div class="nr">
-      <a href="#resources" class="ndl" aria-label="Download catalogue">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 2v7m-3-3 3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Catalogue
-      </a>
-      <a href="#contact" class="btn btn-p">
-        Request Quote
-        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-
-    <button class="ham" id="ham" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mnav">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('products')">Products</a></li>
+      <li><a href="#" onclick="showPage('about')">About Us</a></li>
+      <li><a href="#" onclick="showPage('manufacturing')">Manufacturing</a></li>
+      <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      <li><a href="#" class="nav-cta" onclick="showPage('contact')">Request Quote</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
       <span></span><span></span><span></span>
-    </button>
-  </div>
-
-  <!-- Mobile drawer -->
-  <div class="mnav" id="mnav" role="menu" aria-label="Mobile navigation">
-    <a href="#products" role="menuitem">Products</a>
-    <a href="#ind" role="menuitem">Industries</a>
-    <a href="#cases" role="menuitem">Projects</a>
-    <a href="#resources" role="menuitem">Resources</a>
-    <a href="#contact" role="menuitem">About &amp; Contact</a>
-    <a href="#contact" class="btn btn-p mc" role="menuitem">Request Quote →</a>
+    </div>
   </div>
 </nav>
 
-<!-- ══════════ HERO ══════════ -->
-<section id="hero" aria-label="Hero section">
-  <div class="hbg" aria-hidden="true">
-    <div class="hgrid"></div>
-    <div class="hgl"></div>
-    <div class="hgl2"></div>
-  </div>
+<!-- ======================== HOME PAGE ======================== -->
+<div class="page active" id="page-home">
 
-  <div class="hwrap">
-    <!-- Left -->
-    <div>
-      <div class="heb" aria-hidden="true">Industrial HVAC Manufacturing · Bangalore</div>
-      <h1>
-        Energy-Efficient Air Handling Units
-        <span class="hl">for Commercial &amp; Industrial Buildings</span>
-      </h1>
-      <p class="hd">Precision-engineered HVAC solutions for hospitals, data centres, malls and large-scale infrastructure. Built to ISO standards. Trusted since 1998.</p>
-      <div class="hbtns">
-        <a href="#contact" class="btn btn-p">
-          Request Quote
-          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-grid-overlay"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">Premium HVAC Manufacturer · Bangalore</div>
+          <h1 class="hero-title">
+            High Performance<br>
+            <span class="highlight">HVAC Air Handling</span><br>
+            <span class="accent">Units</span> for Commercial<br>
+            & Industrial Buildings
+          </h1>
+          <p class="hero-sub">Custom engineered AHU systems, cooling coils, and heat recovery solutions designed for energy efficiency and reliability. Trusted by leading corporations since 1998.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn-primary" onclick="showPage('products')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              View Products
+            </a>
+            <a href="#" class="btn-outline" onclick="showPage('contact')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Request Quote
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">26+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">₹30Cr+</span>
+              <span class="stat-label">Company Value</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-corner-accent"></div>
+          <div class="hero-corner-accent2"></div>
+          <div class="hero-img-main placeholder-img">
+            <div class="label"><span class="icon">🏭</span>Placeholder – Industrial Air Handling Unit</div>
+          </div>
+          <div class="hero-img-badge">
+            <span class="badge-title">AHU Manufacturing Facility</span>
+            <span class="badge-sub">Bidarahalli, Bangalore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section id="clients">
+    <div class="container">
+      <div class="clients-inner">
+        <span class="clients-label">Trusted By</span>
+        <div class="client-logo"><span>Placeholder<br>HCL Logo</span></div>
+        <div class="client-logo"><span>Placeholder<br>Axis Bank Logo</span></div>
+        <div class="client-logo"><span>Placeholder<br>Dell Logo</span></div>
+        <div class="client-logo"><span>Placeholder<br>Phoenix Mall Logo</span></div>
+        <div class="client-logo"><span>Placeholder<br>Client Logo</span></div>
+        <div class="client-logo"><span>Placeholder<br>Client Logo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS OVERVIEW -->
+  <section id="products-overview">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Our Products</div>
+        <h2 class="section-title">Engineered HVAC Solutions</h2>
+        <div class="divider"></div>
+        <p class="section-sub">From standard air handling units to custom heat recovery systems, every product is precision-manufactured at our Bangalore facility to meet demanding commercial and industrial requirements.</p>
+      </div>
+      <div class="products-grid">
+
+        <!-- AHU -->
+        <a href="#" class="product-card" onclick="showPage('product-ahu')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%">
+              <div class="label"><span class="icon">💨</span>Placeholder – Air Handling Unit Product</div>
+            </div>
+            <div class="product-card-tag">AHU</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Air Handling Units (AHU)</div>
+            <p class="product-card-desc">Heavy-duty horizontal and vertical AHUs designed for large commercial buildings, hospitals, data centers, and industrial facilities with high ventilation demands.</p>
+            <div class="product-card-specs">
+              <span class="spec-chip">500–50,000 CMH</span>
+              <span class="spec-chip">Double Skin</span>
+              <span class="spec-chip">High Efficiency</span>
+            </div>
+            <div class="product-card-link">Explore AHUs <span class="arrow">→</span></div>
+          </div>
         </a>
-        <a href="#products" class="btn btn-g">
-          Explore Products
-          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <!-- HRW -->
+        <a href="#" class="product-card" onclick="showPage('product-hrw')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%">
+              <div class="label"><span class="icon">🔄</span>Placeholder – Horizontal AHU with Heat Recovery Wheel</div>
+            </div>
+            <div class="product-card-tag">Heat Recovery</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Horizontal AHU with HRW</div>
+            <p class="product-card-desc">Integrated horizontal air handling units with heat recovery wheels, delivering up to 85% sensible heat recovery efficiency for energy-intensive facilities.</p>
+            <div class="product-card-specs">
+              <span class="spec-chip">Up to 85% Recovery</span>
+              <span class="spec-chip">Horizontal</span>
+              <span class="spec-chip">LEED Ready</span>
+            </div>
+            <div class="product-card-link">Explore HRW Units <span class="arrow">→</span></div>
+          </div>
+        </a>
+
+        <!-- PHE -->
+        <a href="#" class="product-card" onclick="showPage('product-phe')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%">
+              <div class="label"><span class="icon">♻️</span>Placeholder – Horizontal AHU with Plate Heat Exchanger</div>
+            </div>
+            <div class="product-card-tag">Heat Exchange</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Horizontal AHU with PHE</div>
+            <p class="product-card-desc">Horizontal air handling units with plate heat exchangers for precise temperature control and energy recovery in commercial and institutional buildings.</p>
+            <div class="product-card-specs">
+              <span class="spec-chip">Cross-Flow PHE</span>
+              <span class="spec-chip">Low Pressure Drop</span>
+              <span class="spec-chip">Compact Design</span>
+            </div>
+            <div class="product-card-link">Explore PHE Units <span class="arrow">→</span></div>
+          </div>
+        </a>
+
+        <!-- COOLING COILS -->
+        <a href="#" class="product-card" onclick="showPage('product-coils')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%">
+              <div class="label"><span class="icon">❄️</span>Placeholder – Cooling Coil Product</div>
+            </div>
+            <div class="product-card-tag">Components</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Cooling Coils</div>
+            <p class="product-card-desc">Precision-manufactured chilled water and DX cooling coils in copper-aluminium and copper-copper configurations for OEM and replacement applications.</p>
+            <div class="product-card-specs">
+              <span class="spec-chip">Cu-Al &amp; Cu-Cu</span>
+              <span class="spec-chip">Custom Sizes</span>
+              <span class="spec-chip">High LMTD</span>
+            </div>
+            <div class="product-card-link">Explore Cooling Coils <span class="arrow">→</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Industries We Serve</div>
+        <h2 class="section-title">Built for Demanding Environments</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Our HVAC systems operate across the most demanding industrial and commercial environments, engineered to exacting standards for each application.</p>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-item">
+          <div class="industry-icon">🏥</div>
+          <div class="industry-name">Hospitals &amp; Healthcare</div>
+          <p class="industry-desc">HEPA-filtered AHUs with precise humidity control for critical care, OT, and clean room environments meeting NABH standards.</p>
+        </div>
+        <div class="industry-item">
+          <div class="industry-icon">🖥️</div>
+          <div class="industry-name">Data Centers</div>
+          <p class="industry-desc">High-capacity precision air handling systems for IT infrastructure with redundancy, N+1 configurations, and 24×7 reliability.</p>
+        </div>
+        <div class="industry-item">
+          <div class="industry-icon">🏢</div>
+          <div class="industry-name">Corporate Offices</div>
+          <p class="industry-desc">Energy-efficient AHU solutions for large commercial office buildings, campuses, and IT parks. Clients include HCL, Dell, Axis Bank.</p>
+        </div>
+        <div class="industry-item">
+          <div class="industry-icon">🛍️</div>
+          <div class="industry-name">Shopping Malls</div>
+          <p class="industry-desc">Large-volume air handling systems for retail malls, multiplexes, and entertainment centres requiring uniform comfort across vast areas.</p>
+        </div>
+        <div class="industry-item">
+          <div class="industry-icon">✈️</div>
+          <div class="industry-name">Airports &amp; Transit</div>
+          <p class="industry-desc">High-airflow AHUs engineered for terminal buildings, lounges, and transit hubs with stringent IAQ and energy targets.</p>
+        </div>
+        <div class="industry-item">
+          <div class="industry-icon">🏭</div>
+          <div class="industry-name">Industrial Facilities</div>
+          <p class="industry-desc">Robust air handling and process cooling solutions for manufacturing plants, pharmaceutical facilities, and clean room production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ASTRA -->
+  <section id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div>
+          <div class="section-label" style="color:var(--secondary)">Why Astra Airtech</div>
+          <h2 class="section-title light">Engineering Excellence,<br>Built in Bangalore</h2>
+          <div class="divider"></div>
+          <p class="section-sub light" style="margin-bottom:40px">Since 1998, Astra Airtech has been the trusted HVAC manufacturing partner for architects, MEP consultants, and facility managers across South India. Our philosophy: total solutions, not just products.</p>
+          <div class="why-features">
+            <div class="why-card">
+              <span class="why-card-icon">⚙️</span>
+              <div class="why-card-title">Custom Engineering</div>
+              <p class="why-card-desc">Every AHU is engineered to specification — airflow, static pressure, coil selection, controls, and enclosure.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-card-icon">🏭</span>
+              <div class="why-card-title">In-House Manufacturing</div>
+              <p class="why-card-desc">CNC fabrication, precision assembly, and quality testing all at our Bidarahalli, Bangalore facility.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-card-icon">🌱</span>
+              <div class="why-card-title">Energy Efficiency</div>
+              <p class="why-card-desc">Heat recovery solutions and EC fan motor options deliver up to 60% energy savings over conventional systems.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-card-icon">🤝</span>
+              <div class="why-card-title">Consultant Support</div>
+              <p class="why-card-desc">We work with architects, MEP engineers, and HVAC consultants from concept stage with technical inputs and selection assistance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual">
+          <div class="why-img-stack">
+            <div class="experience-badge">
+              <span class="num">26</span>
+              <span class="txt">Years of<br>Excellence</span>
+            </div>
+            <div class="why-img-main placeholder-img">
+              <div class="label"><span class="icon">🏭</span>Placeholder – HVAC Manufacturing Factory</div>
+            </div>
+            <div class="why-img-mini placeholder-img">
+              <div class="label" style="font-size:9px">Placeholder – Quality Control</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUFACTURING OVERVIEW -->
+  <section id="manufacturing-overview">
+    <div class="container">
+      <div class="mfg-grid">
+        <div>
+          <div class="section-label">Manufacturing</div>
+          <h2 class="section-title">Built with Precision.<br>Delivered with Confidence.</h2>
+          <div class="divider"></div>
+          <ul class="mfg-list">
+            <li class="mfg-item">
+              <span class="mfg-item-num">01</span>
+              <div class="mfg-item-content">
+                <div class="mfg-item-title">CNC Precision Fabrication</div>
+                <p class="mfg-item-desc">Computer-controlled cutting, bending, and forming of galvanised steel and aluminium components ensures dimensional accuracy to ±0.5mm.</p>
+              </div>
+            </li>
+            <li class="mfg-item">
+              <span class="mfg-item-num">02</span>
+              <div class="mfg-item-content">
+                <div class="mfg-item-title">Coil Manufacturing In-House</div>
+                <p class="mfg-item-desc">Cooling coils are manufactured on-site using fin-and-tube expansion technology with hydraulic pressure testing up to 30 bar.</p>
+              </div>
+            </li>
+            <li class="mfg-item">
+              <span class="mfg-item-num">03</span>
+              <div class="mfg-item-content">
+                <div class="mfg-item-title">Rigorous Quality Testing</div>
+                <p class="mfg-item-desc">Each AHU undergoes airflow performance testing, leakage testing, and vibration analysis before dispatch from factory.</p>
+              </div>
+            </li>
+            <li class="mfg-item">
+              <span class="mfg-item-num">04</span>
+              <div class="mfg-item-content">
+                <div class="mfg-item-title">Full Project Support</div>
+                <p class="mfg-item-desc">From selection to site installation supervision, our engineering team provides complete technical support throughout the project lifecycle.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="mfg-images">
+          <div class="mfg-img placeholder-img">
+            <div class="label"><span class="icon">🏭</span>Placeholder – Manufacturing Floor Overview</div>
+          </div>
+          <div class="mfg-img placeholder-img">
+            <div class="label"><span class="icon">⚙️</span>Placeholder – CNC Fabrication</div>
+          </div>
+          <div class="mfg-img placeholder-img">
+            <div class="label"><span class="icon">🔬</span>Placeholder – Quality Control Testing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section id="projects" style="background:white">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Featured Projects</div>
+        <h2 class="section-title">Delivered Across Bangalore</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Our HVAC systems are trusted by some of Bangalore's most iconic commercial and corporate properties.</p>
+      </div>
+      <div class="projects-grid">
+        <a href="#" class="project-card" onclick="showPage('contact')">
+          <div class="project-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%;background:linear-gradient(135deg,#1a3a5c,#0d2d45)">
+              <div class="label"><span class="icon">💻</span>Placeholder – Dell Campus Project Image</div>
+            </div>
+            <div class="project-card-overlay"></div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-category">Corporate IT Campus</span>
+            <div class="project-card-title">Dell Technologies Campus HVAC System</div>
+            <div class="project-card-meta"><span>📍 Bangalore</span><span>·</span><span>AHU + Cooling Coils</span></div>
+          </div>
+        </a>
+        <a href="#" class="project-card" onclick="showPage('contact')">
+          <div class="project-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%;background:linear-gradient(135deg,#1a3a5c,#0d2d45)">
+              <div class="label"><span class="icon">🏦</span>Placeholder – Axis Bank Facility Image</div>
+            </div>
+            <div class="project-card-overlay"></div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-category">Banking Facility</span>
+            <div class="project-card-title">Axis Bank Facility HVAC Installation</div>
+            <div class="project-card-meta"><span>📍 Bangalore</span><span>·</span><span>Custom AHU System</span></div>
+          </div>
+        </a>
+        <a href="#" class="project-card" onclick="showPage('contact')">
+          <div class="project-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%;background:linear-gradient(135deg,#1a3a5c,#0d2d45)">
+              <div class="label"><span class="icon">🛍️</span>Placeholder – Phoenix Mall Project Image</div>
+            </div>
+            <div class="project-card-overlay"></div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-category">Retail &amp; Entertainment</span>
+            <div class="project-card-title">Phoenix Market City Air Handling System</div>
+            <div class="project-card-meta"><span>📍 Bangalore</span><span>·</span><span>Large-Volume AHUs</span></div>
+          </div>
         </a>
       </div>
-      <div class="hstats" aria-label="Key statistics">
-        <div>
-          <div class="hsn">30<span>+</span></div>
-          <div class="hsl">Years Experience</div>
-        </div>
-        <div>
-          <div class="hsn">500<span>+</span></div>
-          <div class="hsl">Installations</div>
-        </div>
-        <div>
-          <div class="hsn">₹30<span>Cr+</span></div>
-          <div class="hsl">Company Value</div>
-        </div>
-        <div>
-          <div class="hsn">ISO</div>
-          <div class="hsl">9001 Certified</div>
-        </div>
-      </div>
     </div>
+  </section>
 
-    <!-- Right — AHU diagram card (hidden on mobile) -->
-    <div class="hv" aria-hidden="true">
-      <div style="position:relative">
-        <div class="acb">AHU-2400 SERIES</div>
-        <div class="ac">
-          <div class="adw">
-            <svg viewBox="0 0 480 255" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
-              <defs>
-                <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#1a3060"/><stop offset="100%" stop-color="#091528"/>
-                </linearGradient>
-              </defs>
-              <rect x="36" y="44" width="408" height="158" rx="6" fill="url(#bg)" stroke="#00cdd9" stroke-width="1.4" stroke-opacity=".6"/>
-              <line x1="128" y1="44" x2="128" y2="202" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".22" stroke-dasharray="4 3"/>
-              <line x1="220" y1="44" x2="220" y2="202" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".22" stroke-dasharray="4 3"/>
-              <line x1="344" y1="44" x2="344" y2="202" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".22" stroke-dasharray="4 3"/>
-              <!-- Filter -->
-              <rect x="48" y="60" width="68" height="78" rx="2" fill="none" stroke="#00cdd9" stroke-width="1" stroke-opacity=".5"/>
-              <line x1="58" y1="60" x2="58" y2="138" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="68" y1="60" x2="68" y2="138" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="78" y1="60" x2="78" y2="138" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="88" y1="60" x2="88" y2="138" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="98" y1="60" x2="98" y2="138" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="108" y1="60" x2="108" y2="138" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <text x="82" y="152" fill="#00cdd9" font-size="7.5" font-family="IBM Plex Mono" text-anchor="middle" opacity=".6">FILTER</text>
-              <!-- Coil -->
-              <rect x="140" y="60" width="68" height="78" rx="2" fill="none" stroke="#00cdd9" stroke-width="1" stroke-opacity=".5"/>
-              <path d="M150 82 Q158 72 166 82 Q174 92 182 82 Q190 72 198 82" fill="none" stroke="#00cdd9" stroke-width="1.4" stroke-opacity=".7"/>
-              <path d="M150 98 Q158 88 166 98 Q174 108 182 98 Q190 88 198 98" fill="none" stroke="#00cdd9" stroke-width="1.4" stroke-opacity=".7"/>
-              <path d="M150 114 Q158 104 166 114 Q174 124 182 114 Q190 104 198 114" fill="none" stroke="#00cdd9" stroke-width="1.4" stroke-opacity=".7"/>
-              <text x="174" y="152" fill="#00cdd9" font-size="7.5" font-family="IBM Plex Mono" text-anchor="middle" opacity=".6">COIL</text>
-              <!-- Fan -->
-              <circle cx="282" cy="123" r="35" fill="none" stroke="#00cdd9" stroke-width="1.4" stroke-opacity=".6"/>
-              <circle cx="282" cy="123" r="7" fill="#00cdd9" fill-opacity=".35"/>
-              <path d="M282 88 L287 110 L282 123 L277 110 Z" fill="#00cdd9" fill-opacity=".32"/>
-              <path d="M317 123 L295 129 L282 123 L295 117 Z" fill="#00cdd9" fill-opacity=".32"/>
-              <path d="M282 158 L277 136 L282 123 L287 136 Z" fill="#00cdd9" fill-opacity=".32"/>
-              <path d="M247 123 L269 117 L282 123 L269 129 Z" fill="#00cdd9" fill-opacity=".32"/>
-              <text x="282" y="174" fill="#00cdd9" font-size="7.5" font-family="IBM Plex Mono" text-anchor="middle" opacity=".6">FAN MOTOR</text>
-              <!-- Supply -->
-              <rect x="356" y="60" width="76" height="78" rx="2" fill="none" stroke="#00cdd9" stroke-width="1" stroke-opacity=".5"/>
-              <line x1="366" y1="72" x2="422" y2="72" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="366" y1="84" x2="422" y2="84" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="366" y1="96" x2="422" y2="96" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="366" y1="108" x2="422" y2="108" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="366" y1="120" x2="422" y2="120" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <line x1="366" y1="132" x2="422" y2="132" stroke="#00cdd9" stroke-width=".65" stroke-opacity=".4"/>
-              <text x="394" y="152" fill="#00cdd9" font-size="7.5" font-family="IBM Plex Mono" text-anchor="middle" opacity=".6">SUPPLY</text>
-              <!-- Ducts -->
-              <rect x="0" y="99" width="36" height="48" rx="2" fill="#0d1e3a" stroke="#00cdd9" stroke-width=".8" stroke-opacity=".4"/>
-              <text x="18" y="127" fill="#00cdd9" font-size="7" font-family="IBM Plex Mono" text-anchor="middle" opacity=".5">IN</text>
-              <rect x="444" y="99" width="36" height="48" rx="2" fill="#0d1e3a" stroke="#00cdd9" stroke-width=".8" stroke-opacity=".4"/>
-              <text x="462" y="127" fill="#00cdd9" font-size="7" font-family="IBM Plex Mono" text-anchor="middle" opacity=".5">OUT</text>
-              <text x="240" y="228" fill="rgba(255,255,255,.18)" font-size="7" font-family="IBM Plex Mono" text-anchor="middle">CROSS-SECTION · AIR HANDLING UNIT · ASTRA AIRTECH</text>
-            </svg>
-          </div>
-          <div class="am">
-            <div>
-              <div class="aml">Featured Product</div>
-              <div class="amn">Horizontal AHU with Heat Recovery Wheel</div>
-            </div>
-            <div class="ab">ISO 16890 · ASHRAE</div>
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:40px">
+        <div class="section-label" style="justify-content:center">Certifications &amp; Standards</div>
+        <h2 class="section-title" style="font-size:36px">Quality You Can Certify</h2>
+      </div>
+      <div class="certs-row">
+        <div class="cert-badge">
+          <div class="cert-icon">🏅</div>
+          <div>
+            <div class="cert-name">ISO 9001:2015</div>
+            <div class="cert-body">Quality Management System</div>
           </div>
         </div>
-        <!-- Data badges -->
-        <div class="dp dp1">
-          <div class="dv">85%</div>
-          <div class="dl">Heat Recovery</div>
-        </div>
-        <div class="dp dp2">
-          <div class="dv">EC Motor</div>
-          <div class="dl">EC Fan Drive</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ TRUST ══════════ -->
-<section id="trust" aria-label="Trusted clients">
-  <div class="W">
-    <div class="tr">
-      <span class="trlbl">Trusted by</span>
-      <div class="trdiv" aria-hidden="true"></div>
-      <div class="trlogos">
-        <span class="trlogo">HCL</span>
-        <span class="trlogo">Axis Bank</span>
-        <span class="trlogo">Dell</span>
-        <span class="trlogo">Phoenix Mall</span>
-        <span class="trlogo">Prestige Group</span>
-        <span class="trlogo">Brigade Group</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ PRODUCTS ══════════ -->
-<section id="products" class="S" aria-label="Products">
-  <div class="W">
-    <div class="phd">
-      <div>
-        <div class="EB rev">Product Range</div>
-        <h2 class="SH rev">Precision-Built <em>HVAC Systems</em></h2>
-        <p class="SS rev d1">Every unit engineered to specification, tested to international standards, and built for decades of reliable performance.</p>
-      </div>
-      <a href="#contact" class="btn btn-gd rev d2">
-        View Full Catalogue
-        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-    <div class="pgrid">
-      <div class="pc rev">
-        <div class="pn" aria-hidden="true">01</div>
-        <div class="pi" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="#00cdd9" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="#00cdd9" stroke-width="1.5"/><line x1="2" y1="12" x2="5" y2="12" stroke="#00cdd9" stroke-width="1.5"/><line x1="19" y1="12" x2="22" y2="12" stroke="#00cdd9" stroke-width="1.5"/></svg>
-        </div>
-        <h3 class="pm">Air Handling Units (AHU)</h3>
-        <p class="pd">Double-skin modular AHUs with high-efficiency fans, multi-stage filtration, and precision cooling coils for commercial and industrial applications.</p>
-        <a href="#contact" class="pa">Explore →</a>
-      </div>
-      <div class="pc rev d1">
-        <div class="pn" aria-hidden="true">02</div>
-        <div class="pi" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="#00cdd9" stroke-width="1.5"/><path d="M2 12h20M8 3v18M16 3v18" stroke="#00cdd9" stroke-width="1" stroke-dasharray="2 2"/></svg>
-        </div>
-        <h3 class="pm">Horizontal AHU with HRW</h3>
-        <p class="pd">Integrated heat recovery wheel recovering up to 85% of thermal energy — dramatically reducing cooling and heating loads.</p>
-        <a href="#contact" class="pa">Explore →</a>
-      </div>
-      <div class="pc rev d2">
-        <div class="pn" aria-hidden="true">03</div>
-        <div class="pi" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="#00cdd9" stroke-width="1.5"/><path d="M7 9 Q9 12 7 15M11 9 Q13 12 11 15M15 9 Q17 12 15 15" stroke="#00cdd9" stroke-width="1.2"/></svg>
-        </div>
-        <h3 class="pm">Horizontal AHU with PHE</h3>
-        <p class="pd">Plate Heat Exchanger integration for superior thermal efficiency, reduced maintenance intervals, and optimal energy recovery.</p>
-        <a href="#contact" class="pa">Explore →</a>
-      </div>
-      <div class="pc rev d3">
-        <div class="pn" aria-hidden="true">04</div>
-        <div class="pi" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" stroke="#00cdd9" stroke-width="1.5"/><path d="M12 5v3M12 16v3M5 12h3M16 12h3" stroke="#00cdd9" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="#00cdd9" fill-opacity=".45"/></svg>
-        </div>
-        <h3 class="pm">Cooling Coils</h3>
-        <p class="pd">Custom-fabricated chilled water and DX cooling coils built to your exact airflow, duty, and dimensional requirements. Copper tube, aluminium fin.</p>
-        <a href="#contact" class="pa">Explore →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ INDUSTRIES ══════════ -->
-<section id="ind" class="S S--dk" aria-label="Industries served">
-  <div class="indbg" aria-hidden="true"></div>
-  <div class="W">
-    <div class="EB EB-inv rev">Industries Served</div>
-    <h2 class="SH rev">Built for <em>Demanding Environments</em></h2>
-    <p class="SS SS-inv rev d1">From sterile hospital corridors to high-density data halls — our systems are engineered for environments where performance is non-negotiable.</p>
-    <div class="igrid">
-      <div class="ic rev" tabindex="0" role="button" aria-label="Healthcare and hospitals">
-        <div>
-          <div class="ii" aria-hidden="true">🏥</div>
-          <div class="in2">Healthcare &amp; Hospitals</div>
-          <div class="is">HEPA filtration · Pressure control</div>
-        </div>
-        <div class="ia" aria-hidden="true">→</div>
-      </div>
-      <div class="ic rev d1" tabindex="0" role="button" aria-label="Data centres">
-        <div>
-          <div class="ii" aria-hidden="true">🖥</div>
-          <div class="in2">Data Centres</div>
-          <div class="is">Precision cooling · 24×7 uptime</div>
-        </div>
-        <div class="ia" aria-hidden="true">→</div>
-      </div>
-      <div class="ic rev d2" tabindex="0" role="button" aria-label="Commercial buildings">
-        <div>
-          <div class="ii" aria-hidden="true">🏢</div>
-          <div class="in2">Commercial Buildings</div>
-          <div class="is">Malls · Offices · Hotels</div>
-        </div>
-        <div class="ia" aria-hidden="true">→</div>
-      </div>
-      <div class="ic rev d3" tabindex="0" role="button" aria-label="Pharma manufacturing">
-        <div>
-          <div class="ii" aria-hidden="true">🧪</div>
-          <div class="in2">Pharma Manufacturing</div>
-          <div class="is">GMP compliant · Clean rooms</div>
-        </div>
-        <div class="ia" aria-hidden="true">→</div>
-      </div>
-      <div class="ic rev d4" tabindex="0" role="button" aria-label="Industrial plants">
-        <div>
-          <div class="ii" aria-hidden="true">🏭</div>
-          <div class="in2">Industrial Plants</div>
-          <div class="is">Heavy duty · Process ventilation</div>
-        </div>
-        <div class="ia" aria-hidden="true">→</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ WHY ASTRA ══════════ -->
-<section id="why" class="S S--off" aria-label="Why Astra Airtech">
-  <div class="W">
-    <div class="wg">
-      <div>
-        <div class="EB rev">Our Advantage</div>
-        <h2 class="SH rev">Why Engineers Choose <em>Astra Airtech</em></h2>
-        <p class="SS rev d1">30 years of manufacturing excellence combined with modern engineering processes — every unit leaves our factory ready to perform at specification.</p>
-        <div class="wf">
-          <div class="wfc rev">
-            <div class="wfi" aria-hidden="true">⚡</div>
-            <div class="wft">Energy Efficiency</div>
-            <div class="wfd">EC fan motors and heat recovery achieve 40–85% energy savings vs conventional systems.</div>
-          </div>
-          <div class="wfc rev d1">
-            <div class="wfi" aria-hidden="true">🔧</div>
-            <div class="wft">Custom Engineering</div>
-            <div class="wfd">Every unit designed to your exact airflow, duty, and space constraints. No compromises.</div>
-          </div>
-          <div class="wfc rev d2">
-            <div class="wfi" aria-hidden="true">🏆</div>
-            <div class="wft">Proven Reliability</div>
-            <div class="wfd">Units running continuously across Bangalore's landmark facilities for 10+ years.</div>
-          </div>
-          <div class="wfc rev d3">
-            <div class="wfi" aria-hidden="true">📋</div>
-            <div class="wft">Full Documentation</div>
-            <div class="wfd">Comprehensive datasheets, O&amp;M manuals, and commissioning support included.</div>
+        <div class="cert-badge">
+          <div class="cert-icon">⚡</div>
+          <div>
+            <div class="cert-name">BEE Rated</div>
+            <div class="cert-body">Energy Efficiency Standards</div>
           </div>
         </div>
-      </div>
-      <!-- Visual — hidden on mobile via CSS -->
-      <div class="wvis rev" aria-hidden="true">
-        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="width:82%;height:82%;opacity:.85">
-          <rect width="480" height="360" fill="#0d1e3a"/>
-          <rect x="36" y="108" width="408" height="132" rx="4" fill="none" stroke="#00cdd9" stroke-width=".85" stroke-opacity=".35"/>
-          <rect x="56" y="126" width="80" height="80" rx="3" fill="#091528" stroke="#00cdd9" stroke-width="1.1" stroke-opacity=".6"/>
-          <line x1="66" y1="138" x2="126" y2="138" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <line x1="66" y1="150" x2="126" y2="150" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <line x1="66" y1="162" x2="126" y2="162" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <line x1="66" y1="174" x2="126" y2="174" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <rect x="176" y="116" width="128" height="94" rx="3" fill="#091528" stroke="#00cdd9" stroke-width="1.4" stroke-opacity=".9"/>
-          <circle cx="240" cy="163" r="30" fill="none" stroke="#00cdd9" stroke-width="1.2" stroke-opacity=".6"/>
-          <circle cx="240" cy="163" r="7" fill="#00cdd9" fill-opacity=".35"/>
-          <path d="M240 133 L245 153 L240 163 L235 153 Z" fill="#00cdd9" fill-opacity=".45"/>
-          <path d="M270 163 L250 168 L240 163 L250 158 Z" fill="#00cdd9" fill-opacity=".45"/>
-          <path d="M240 193 L235 173 L240 163 L245 173 Z" fill="#00cdd9" fill-opacity=".45"/>
-          <path d="M210 163 L230 158 L240 163 L230 168 Z" fill="#00cdd9" fill-opacity=".45"/>
-          <rect x="344" y="126" width="84" height="80" rx="3" fill="#091528" stroke="#00cdd9" stroke-width="1.1" stroke-opacity=".55"/>
-          <line x1="356" y1="140" x2="418" y2="140" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <line x1="356" y1="152" x2="418" y2="152" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <line x1="356" y1="164" x2="418" y2="164" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <line x1="356" y1="176" x2="418" y2="176" stroke="#00cdd9" stroke-width=".7" stroke-opacity=".4"/>
-          <line x1="36" y1="252" x2="444" y2="252" stroke="#00cdd9" stroke-width="1.6" stroke-opacity=".22"/>
-          <circle cx="56" cy="252" r="5.5" fill="none" stroke="#00cdd9" stroke-width=".9" stroke-opacity=".4"/>
-          <circle cx="130" cy="252" r="5.5" fill="none" stroke="#00cdd9" stroke-width=".9" stroke-opacity=".4"/>
-          <circle cx="240" cy="252" r="5.5" fill="none" stroke="#00cdd9" stroke-width=".9" stroke-opacity=".4"/>
-          <circle cx="360" cy="252" r="5.5" fill="none" stroke="#00cdd9" stroke-width=".9" stroke-opacity=".4"/>
-          <circle cx="420" cy="252" r="5.5" fill="none" stroke="#00cdd9" stroke-width=".9" stroke-opacity=".4"/>
-          <text x="96" y="102" fill="#00cdd9" font-size="7.5" font-family="IBM Plex Mono" opacity=".42">SECTION A — FILTER</text>
-          <text x="192" y="102" fill="#00cdd9" font-size="7.5" font-family="IBM Plex Mono" opacity=".42">SECTION B — FAN ASSEMBLY</text>
-          <text x="358" y="102" fill="#00cdd9" font-size="7.5" font-family="IBM Plex Mono" opacity=".42">QC TEST</text>
-        </svg>
-        <div class="wcerts">
-          <div class="cb"><div class="cv">ISO 9001</div><div class="cl">Quality Mgmt</div></div>
-          <div class="cb"><div class="cv">ASHRAE</div><div class="cl">Standards</div></div>
-          <div class="cb"><div class="cv">BEE 5★</div><div class="cl">Energy Rating</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ CASE STUDIES ══════════ -->
-<section id="cases" class="S" aria-label="Case studies">
-  <div class="W">
-    <div class="cshd">
-      <div class="EB rev">Project Portfolio</div>
-      <h2 class="SH rev">Real Installations, <em>Real Results</em></h2>
-      <p class="SS rev d1">A snapshot of HVAC systems delivered across Bangalore and Karnataka — every project a testament to engineering precision.</p>
-    </div>
-    <div class="csgrid">
-      <!-- Featured -->
-      <div class="csc rev">
-        <div class="csi">
-          <div class="cstag">Healthcare</div>
-          <svg viewBox="0 0 340 175" xmlns="http://www.w3.org/2000/svg" style="width:74%;opacity:.43">
-            <rect x="16" y="26" width="308" height="122" rx="4" fill="none" stroke="#00cdd9" stroke-width="1.4"/>
-            <rect x="32" y="44" width="84" height="56" rx="2" fill="none" stroke="#00cdd9" stroke-width=".9"/>
-            <circle cx="74" cy="72" r="20" fill="none" stroke="#00cdd9" stroke-width="1.2"/>
-            <circle cx="74" cy="72" r="5" fill="#00cdd9" fill-opacity=".4"/>
-            <path d="M74 52 L77 64 L74 72 L71 64 Z" fill="#00cdd9" fill-opacity=".4"/>
-            <path d="M74 92 L71 80 L74 72 L77 80 Z" fill="#00cdd9" fill-opacity=".4"/>
-            <rect x="148" y="44" width="64" height="56" rx="2" fill="none" stroke="#00cdd9" stroke-width=".9"/>
-            <path d="M156 58 Q172 68 156 78M165 58 Q181 68 165 78M174 58 Q190 68 174 78" fill="none" stroke="#00cdd9" stroke-width="1.1"/>
-            <rect x="248" y="44" width="44" height="56" rx="2" fill="none" stroke="#00cdd9" stroke-width=".9"/>
-            <line x1="256" y1="56" x2="284" y2="56" stroke="#00cdd9" stroke-width=".7"/>
-            <line x1="256" y1="66" x2="284" y2="66" stroke="#00cdd9" stroke-width=".7"/>
-            <line x1="256" y1="76" x2="284" y2="76" stroke="#00cdd9" stroke-width=".7"/>
-            <line x1="256" y1="86" x2="284" y2="86" stroke="#00cdd9" stroke-width=".7"/>
-          </svg>
-        </div>
-        <div class="csb">
-          <div class="cst">Multi-Wing Hospital HVAC System, Bangalore</div>
-          <div class="csd">AHU system serving OT, ICU and general wards with HEPA H14 filtration, differential pressure control, and 24×7 redundancy across 3 buildings with full BMS integration.</div>
-          <div class="csm">
-            <div><div class="cmv">42</div><div class="cml">AHU Units</div></div>
-            <div><div class="cmv">38%</div><div class="cml">Energy Saving</div></div>
-            <div><div class="cmv">99.9%</div><div class="cml">Uptime</div></div>
+        <div class="cert-badge">
+          <div class="cert-icon">🌿</div>
+          <div>
+            <div class="cert-name">ASHRAE Compliant</div>
+            <div class="cert-body">HVAC Design Standards</div>
           </div>
         </div>
-      </div>
-      <div class="csc rev d1">
-        <div class="csi">
-          <div class="cstag">Data Centre</div>
-          <svg viewBox="0 0 220 155" xmlns="http://www.w3.org/2000/svg" style="width:68%;opacity:.43">
-            <rect x="10" y="14" width="200" height="127" rx="4" fill="none" stroke="#00cdd9" stroke-width="1.4"/>
-            <rect x="20" y="26" width="180" height="17" rx="2" fill="none" stroke="#00cdd9" stroke-width=".8"/>
-            <rect x="20" y="51" width="180" height="17" rx="2" fill="none" stroke="#00cdd9" stroke-width=".8"/>
-            <rect x="20" y="76" width="180" height="17" rx="2" fill="none" stroke="#00cdd9" stroke-width=".8"/>
-            <rect x="20" y="101" width="180" height="17" rx="2" fill="none" stroke="#00cdd9" stroke-width=".8"/>
-            <circle cx="188" cy="34.5" r="4" fill="#00cdd9" fill-opacity=".55"/>
-            <circle cx="188" cy="59.5" r="4" fill="#00cdd9" fill-opacity=".55"/>
-            <circle cx="188" cy="84.5" r="4" fill="#00cdd9" fill-opacity=".22"/>
-            <circle cx="188" cy="109.5" r="4" fill="#00cdd9" fill-opacity=".55"/>
-          </svg>
-        </div>
-        <div class="csb">
-          <div class="cst">IT Park Data Centre Cooling, Electronic City</div>
-          <div class="csd">Precision cooling AHUs maintaining N+1 redundancy for a 2MW data centre with sub-1°C temperature variance requirements.</div>
-          <div class="csm">
-            <div><div class="cmv">PUE 1.4</div><div class="cml">Achieved</div></div>
-            <div><div class="cmv">18</div><div class="cml">AHU Units</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="csc rev d2">
-        <div class="csi">
-          <div class="cstag">Retail</div>
-          <svg viewBox="0 0 220 155" xmlns="http://www.w3.org/2000/svg" style="width:68%;opacity:.43">
-            <rect x="10" y="20" width="200" height="115" rx="4" fill="none" stroke="#00cdd9" stroke-width="1.4"/>
-            <rect x="20" y="36" width="72" height="68" rx="2" fill="none" stroke="#00cdd9" stroke-width=".8"/>
-            <circle cx="56" cy="70" r="22" fill="none" stroke="#00cdd9" stroke-width="1"/>
-            <circle cx="56" cy="70" r="5" fill="#00cdd9" fill-opacity=".35"/>
-            <path d="M56 48 L59 60 L56 70 L53 60 Z" fill="#00cdd9" fill-opacity=".4"/>
-            <rect x="128" y="36" width="72" height="68" rx="2" fill="none" stroke="#00cdd9" stroke-width=".8"/>
-            <path d="M136 50 Q162 63 136 76M148 50 Q174 63 148 76M160 50 Q186 63 160 76" fill="none" stroke="#00cdd9" stroke-width="1"/>
-          </svg>
-        </div>
-        <div class="csb">
-          <div class="cst">Phoenix Mall Bangalore HVAC Upgrade</div>
-          <div class="csd">Full AHU replacement across 4 floors and 12 zones. Improved comfort scores and reduced energy cost by 31%.</div>
-          <div class="csm">
-            <div><div class="cmv">31%</div><div class="cml">Cost Reduction</div></div>
-            <div><div class="cmv">28</div><div class="cml">AHU Units</div></div>
+        <div class="cert-badge">
+          <div class="cert-icon">✅</div>
+          <div>
+            <div class="cert-name">Quality Assured</div>
+            <div class="cert-body">Factory Tested &amp; Certified</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════ SPECS ══════════ -->
-<section id="specs" class="S S--dk" aria-label="Technical specifications">
-  <div class="specsbg" aria-hidden="true"></div>
-  <div class="W">
-    <div class="EB EB-inv rev">Technical Specifications</div>
-    <h2 class="SH rev">AHU Series <em>Comparison</em></h2>
-    <p class="SS SS-inv rev d1">Standard product range. All units customisable to specific airflow, duty, and dimensional requirements.</p>
-    <div class="to rev" role="region" aria-label="AHU specifications comparison table" tabindex="0">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Parameter</th>
-            <th scope="col">AHU-600</th>
-            <th scope="col">AHU-1200</th>
-            <th scope="col">AHU-2400</th>
-            <th scope="col">AHU-4800</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Airflow Capacity</td><td><span class="sv">600–2,000 CFM</span></td><td><span class="sv">2,000–6,000 CFM</span></td><td><span class="sv">6,000–18,000 CFM</span></td><td><span class="sv">18,000–48,000 CFM</span></td></tr>
-          <tr><td>Cooling Capacity</td><td>5–20 kW</td><td>20–80 kW</td><td><span class="sv">80–250 kW</span></td><td><span class="sv">250–800 kW</span></td></tr>
-          <tr><td>Fan Type</td><td>FC Centrifugal</td><td>FC Centrifugal</td><td><span class="stag">EC Motor</span></td><td><span class="stag">EC Motor</span></td></tr>
-          <tr><td>Filtration</td><td>G4 + F7</td><td>G4 + F7 + F9</td><td>G4 + F9</td><td><span class="stag">G4 + F9 + HEPA H14</span></td></tr>
-          <tr><td>Heat Recovery</td><td>Optional PHE</td><td>PHE / HRW</td><td><span class="stag">HRW up to 85%</span></td><td><span class="stag">HRW up to 85%</span></td></tr>
-          <tr><td>Panel Casing</td><td>25mm Double Skin</td><td>25mm Double Skin</td><td><span class="sv">50mm Double Skin</span></td><td><span class="sv">50mm Double Skin</span></td></tr>
-          <tr><td>Best For</td><td>Offices, Retail</td><td>Hospitals, IT</td><td>Data Centres, Pharma</td><td>Large Industrial</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="sth" aria-hidden="true">← Swipe to see all columns →</p>
-    <div class="sacts rev">
-      <a href="#contact" class="btn btn-p">Request Custom Spec Sheet</a>
-      <a href="#resources" class="btn btn-g">Download Catalogue</a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ RESOURCES ══════════ -->
-<section id="resources" class="S" aria-label="Engineering resources">
-  <div class="W">
-    <div class="EB rev">Engineering Resources</div>
-    <h2 class="SH rev">Technical <em>Documentation</em></h2>
-    <p class="SS rev d1">Everything a mechanical engineer, consultant, or procurement team needs to specify and evaluate Astra Airtech systems.</p>
-    <div class="rgrid">
-      <div class="rc rev">
-        <div class="rt rt-p">📄 PDF Datasheet</div>
-        <h3 class="rtl">AHU Product Range — Technical Datasheet 2024</h3>
-        <p class="rde">Complete specifications, dimensional drawings, and performance curves for the full AHU range from 600 to 48,000 CFM.</p>
-        <div class="rct">Download PDF →</div>
-      </div>
-      <div class="rc rev d1">
-        <div class="rt rt-g">📘 Selection Guide</div>
-        <h3 class="rtl">AHU Selection &amp; Sizing Guide for HVAC Engineers</h3>
-        <p class="rde">Step-by-step methodology for calculating airflow, selecting heat recovery technology, and specifying custom units.</p>
-        <div class="rct">Read Guide →</div>
-      </div>
-      <div class="rc rev d2">
-        <div class="rt rt-a">📰 Technical Article</div>
-        <h3 class="rtl">Heat Recovery Wheels vs Plate Heat Exchangers</h3>
-        <p class="rde">Engineering analysis comparing HRW and PHE for Indian climate conditions, including payback period calculations.</p>
-        <div class="rct">Read Article →</div>
-      </div>
-      <div class="rc rev">
-        <div class="rt rt-p">📄 PDF Datasheet</div>
-        <h3 class="rtl">Cooling Coils — Custom Fabrication Specifications</h3>
-        <p class="rde">Copper tube aluminium fin coil specs, row configurations, fin pitch options, and connection schedules.</p>
-        <div class="rct">Download PDF →</div>
-      </div>
-      <div class="rc rev d1">
-        <div class="rt rt-g">📘 Installation Guide</div>
-        <h3 class="rtl">AHU Installation &amp; Commissioning Manual</h3>
-        <p class="rde">O&amp;M manual covering installation procedures, commissioning checklists, and maintenance schedules.</p>
-        <div class="rct">Download Manual →</div>
-      </div>
-      <div class="rc rev d2">
-        <div class="rt rt-a">📰 Case Study</div>
-        <h3 class="rtl">Energy Audit: Before &amp; After AHU Retrofit Results</h3>
-        <p class="rde">Operating cost comparison of legacy AHU vs Astra Airtech EC fan units across three commercial sites in Bangalore.</p>
-        <div class="rct">Read Study →</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ CONTACT ══════════ -->
-<section id="contact" class="S S--off" aria-label="Contact and enquiry">
-  <div class="W">
-    <div class="cg">
-      <div>
-        <div class="EB rev">Get In Touch</div>
-        <h2 class="SH rev">Request a Quote <em>or Consultation</em></h2>
-        <p class="SS rev d1">Our engineering team reviews your project and responds within 24 hours with a technical recommendation and pricing.</p>
-        <div class="cways">
-          <a href="tel:+918029909055" class="cw rev">
-            <div class="cwi cwi-ph" aria-hidden="true">📞</div>
-            <div>
-              <div class="cwl">Direct Line</div>
-              <div class="cwv">+91 80 2990 9055</div>
-            </div>
+  <!-- CTA BANNER -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="section-label" style="justify-content:center;color:rgba(0,166,237,0.8)">Get Started</div>
+        <h2 class="cta-title">Need a Custom HVAC Solution?</h2>
+        <p class="cta-sub">Share your project requirements. Our engineering team will respond within 24 hours with a detailed technical and commercial proposal.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-accent" onclick="showPage('contact')">
+            📋 Request a Quote
           </a>
-          <a href="mailto:nairsystems@gmail.com" class="cw rev d1">
-            <div class="cwi cwi-em" aria-hidden="true">✉️</div>
-            <div>
-              <div class="cwl">Email</div>
-              <div class="cwv">nairsystems@gmail.com</div>
-            </div>
-          </a>
-          <a href="https://wa.me/918029909055" class="cw rev d2" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Astra Airtech">
-            <div class="cwi cwi-wa" aria-hidden="true">💬</div>
-            <div>
-              <div class="cwl">WhatsApp</div>
-              <div class="cwv">Chat with our team</div>
-            </div>
+          <a href="tel:+918029909055" class="btn-outline">
+            📞 Call Engineering Team
           </a>
         </div>
-        <div class="acard rev d3">
-          <div class="albl">Factory &amp; Office</div>
-          <address class="atxt" style="font-style:normal">
-            Survey No 2/24, Bidarahalli,<br>
-            Cheemasandra Road, Near East Point College,<br>
-            Bangalore — 560049, Karnataka, India
-          </address>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end home page -->
+
+
+<!-- ======================== PRODUCTS PAGE ======================== -->
+<div class="page" id="page-products">
+  <div class="page-hero">
+    <div class="container">
+      <div style="position:relative;z-index:1">
+        <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span>Products</div>
+        <div class="section-label" style="color:var(--secondary)">Our Product Range</div>
+        <h1 class="page-hero-title">HVAC Products &amp;<br>Systems</h1>
+        <p class="page-hero-sub">Precision-engineered air handling units, heat recovery systems, and cooling coils manufactured at our Bangalore facility for commercial and industrial applications.</p>
+      </div>
+    </div>
+  </div>
+
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div class="products-grid">
+        <a href="#" class="product-card" onclick="showPage('product-ahu')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%"><div class="label"><span class="icon">💨</span>Placeholder – AHU Product Image</div></div>
+            <div class="product-card-tag">AHU</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Air Handling Units (AHU)</div>
+            <p class="product-card-desc">Horizontal and vertical draw-through/blow-through AHUs in single and double skin construction for all HVAC applications.</p>
+            <div class="product-card-specs"><span class="spec-chip">500–50,000 CMH</span><span class="spec-chip">Custom Configuration</span></div>
+            <div class="product-card-link">View Details &amp; Specs <span class="arrow">→</span></div>
+          </div>
+        </a>
+        <a href="#" class="product-card" onclick="showPage('product-hrw')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%"><div class="label"><span class="icon">🔄</span>Placeholder – HRW Unit Image</div></div>
+            <div class="product-card-tag">Heat Recovery</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">AHU with Heat Recovery Wheel</div>
+            <p class="product-card-desc">Integrated HRW units for high-efficiency energy recovery in fresh air applications for commercial and institutional buildings.</p>
+            <div class="product-card-specs"><span class="spec-chip">Up to 85% Recovery</span><span class="spec-chip">LEED Compatible</span></div>
+            <div class="product-card-link">View Details &amp; Specs <span class="arrow">→</span></div>
+          </div>
+        </a>
+        <a href="#" class="product-card" onclick="showPage('product-phe')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%"><div class="label"><span class="icon">♻️</span>Placeholder – PHE Unit Image</div></div>
+            <div class="product-card-tag">Heat Exchange</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">AHU with Plate Heat Exchanger</div>
+            <p class="product-card-desc">Cross-flow plate heat exchanger integrated AHUs for medium-scale energy recovery with no cross-contamination risk.</p>
+            <div class="product-card-specs"><span class="spec-chip">Cross-Flow PHE</span><span class="spec-chip">No Contamination</span></div>
+            <div class="product-card-link">View Details &amp; Specs <span class="arrow">→</span></div>
+          </div>
+        </a>
+        <a href="#" class="product-card" onclick="showPage('product-coils')">
+          <div class="product-card-img">
+            <div class="placeholder-img" style="height:100%;width:100%"><div class="label"><span class="icon">❄️</span>Placeholder – Cooling Coil Image</div></div>
+            <div class="product-card-tag">Components</div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Cooling Coils</div>
+            <p class="product-card-desc">Chilled water and DX cooling coils in copper-aluminium and copper-copper construction, custom-sized for OEM and field replacement.</p>
+            <div class="product-card-specs"><span class="spec-chip">Cu-Al &amp; Cu-Cu</span><span class="spec-chip">All Sizes</span></div>
+            <div class="product-card-link">View Details &amp; Specs <span class="arrow">→</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================== PRODUCT: AHU ======================== -->
+<div class="page" id="page-product-ahu">
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div style="position:relative;z-index:1">
+          <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span><a href="#" onclick="showPage('products')">Products</a><span>/</span>Air Handling Units</div>
+          <div class="section-label" style="color:var(--secondary)">Product · AHU</div>
+          <h1 class="page-hero-title">Air Handling<br>Units (AHU)</h1>
+          <p class="page-hero-sub">Custom-engineered horizontal and vertical AHU systems for commercial and industrial HVAC applications. Manufactured in Bangalore to your exact specifications.</p>
+          <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+            <a href="#" class="btn-primary" onclick="showPage('contact')">Request Quote</a>
+            <a href="#" class="btn-outline">Download Datasheet</a>
+          </div>
+        </div>
+        <div class="hero-img-main placeholder-img" style="height:380px;border-radius:6px">
+          <div class="label"><span class="icon">💨</span>Placeholder – Air Handling Unit Product Image</div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- FORM -->
-      <div class="rev d1">
-        <div class="fc">
-          <div class="ftit">Project Enquiry Form</div>
-          <form id="enqForm" novalidate>
-            <div class="frow">
-              <div class="fg">
-                <label for="fn">Full Name *</label>
-                <input type="text" id="fn" name="name" placeholder="Rajesh Kumar" required autocomplete="name">
-                <span class="ferr" id="fn-e">Please enter your name</span>
-              </div>
-              <div class="fg">
-                <label for="fc2">Company *</label>
-                <input type="text" id="fc2" name="company" placeholder="ABC Consultants" required autocomplete="organization">
-                <span class="ferr" id="fc2-e">Please enter your company</span>
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
+        <div>
+          <div class="section-label">Overview</div>
+          <h2 class="section-title" style="font-size:38px">Product Description</h2>
+          <div class="divider"></div>
+          <p style="color:var(--text-light);line-height:1.75;margin-bottom:16px;font-size:15px">Astra Airtech's Air Handling Units are precision-engineered for a wide range of commercial HVAC applications. Available in horizontal and vertical configurations, our AHUs are manufactured using galvanised steel double-skin panels with thermal and acoustic insulation, ensuring high energy efficiency and low noise operation.</p>
+          <p style="color:var(--text-light);line-height:1.75;margin-bottom:16px;font-size:15px">At the concept stage, our engineering team provides detailed inputs on critical parameters including air velocity, static pressure, fan selection, coil sizing, noise levels, and control sequences — ensuring the right product is selected for every application.</p>
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--primary);margin:28px 0 16px">Applications</h3>
+          <ul style="list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <li style="display:flex;gap:8px;font-size:13.5px;color:var(--text-light)"><span style="color:var(--secondary);font-weight:700">→</span>Corporate Offices &amp; IT Parks</li>
+            <li style="display:flex;gap:8px;font-size:13.5px;color:var(--text-light)"><span style="color:var(--secondary);font-weight:700">→</span>Hospitals &amp; Clean Rooms</li>
+            <li style="display:flex;gap:8px;font-size:13.5px;color:var(--text-light)"><span style="color:var(--secondary);font-weight:700">→</span>Shopping Malls &amp; Retail</li>
+            <li style="display:flex;gap:8px;font-size:13.5px;color:var(--text-light)"><span style="color:var(--secondary);font-weight:700">→</span>Data Centers</li>
+            <li style="display:flex;gap:8px;font-size:13.5px;color:var(--text-light)"><span style="color:var(--secondary);font-weight:700">→</span>Hotels &amp; Hospitality</li>
+            <li style="display:flex;gap:8px;font-size:13.5px;color:var(--text-light)"><span style="color:var(--secondary);font-weight:700">→</span>Industrial Manufacturing</li>
+          </ul>
+        </div>
+        <div>
+          <div class="section-label">Technical Data</div>
+          <h2 class="section-title" style="font-size:38px">Specifications</h2>
+          <div class="divider"></div>
+          <table class="specs-table">
+            <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+            <tbody>
+              <tr><td>Airflow Range</td><td>500 CMH to 50,000 CMH</td></tr>
+              <tr><td>External Static Pressure</td><td>Up to 400 Pa (standard) / Higher on request</td></tr>
+              <tr><td>Construction Type</td><td>Double skin galvanised steel, 25mm / 50mm panels</td></tr>
+              <tr><td>Insulation</td><td>PU foam / Mineral wool – thermal &amp; acoustic</td></tr>
+              <tr><td>Fan Type</td><td>Forward curved / Backward curved / Plug fans</td></tr>
+              <tr><td>Motor Efficiency</td><td>IE2 / IE3 / EC motor options</td></tr>
+              <tr><td>Coil Type</td><td>Chilled water / DX / Hot water / Steam coils</td></tr>
+              <tr><td>Filter Options</td><td>G4 / F7 / F9 / H13 HEPA</td></tr>
+              <tr><td>Drive</td><td>Direct drive / Belt drive / VFD compatible</td></tr>
+              <tr><td>Configuration</td><td>Horizontal / Vertical / Custom</td></tr>
+              <tr><td>Operating Temp</td><td>–10°C to +50°C</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="quote-form-section" id="quote-form-ahu">
+    <div class="container">
+      <div class="quote-form-grid">
+        <div>
+          <div class="section-label" style="color:var(--secondary)">Get in Touch</div>
+          <h2 class="section-title light" style="font-size:40px">Request a Quote<br>for This Product</h2>
+          <div class="divider"></div>
+          <p class="section-sub light" style="margin-bottom:32px">Share your project requirements and our engineering team will provide a detailed technical and commercial proposal within 24 hours.</p>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px;align-items:center;font-size:14px;color:rgba(255,255,255,0.5)"><span>📞</span><span>+91 80 2990 9055</span></div>
+            <div style="display:flex;gap:14px;align-items:center;font-size:14px;color:rgba(255,255,255,0.5)"><span>✉️</span><span>nairsystems@gmail.com</span></div>
+            <div style="display:flex;gap:14px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,0.5)"><span>📍</span><span>Survey No 2/24, Bidarahalli, Cheemasandra Road, Near East Point College, Bangalore 560049</span></div>
+          </div>
+        </div>
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-grid-2">
+            <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your full name" required></div>
+            <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your company"></div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX" required></div>
+            <div class="form-group"><label>Email Address *</label><input type="email" placeholder="you@company.com" required></div>
+          </div>
+          <div class="form-group">
+            <label>Product of Interest</label>
+            <select>
+              <option value="">Select Product</option>
+              <option selected>Air Handling Units (AHU)</option>
+              <option>AHU with Heat Recovery Wheel</option>
+              <option>AHU with Plate Heat Exchanger</option>
+              <option>Cooling Coils</option>
+              <option>Other / Multiple Products</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Project Requirements</label><textarea rows="4" placeholder="Describe your project: airflow requirements, application, building type, quantity needed..."></textarea></div>
+          <button type="submit" class="btn-accent" style="width:100%;justify-content:center;margin-top:8px">Submit Enquiry →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ======================== PRODUCT: HRW ======================== -->
+<div class="page" id="page-product-hrw">
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div style="position:relative;z-index:1">
+          <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span><a href="#" onclick="showPage('products')">Products</a><span>/</span>Horizontal with HRW</div>
+          <div class="section-label" style="color:var(--secondary)">Product · Heat Recovery</div>
+          <h1 class="page-hero-title">Horizontal AHU<br>with HRW</h1>
+          <p class="page-hero-sub">High-efficiency air handling units integrated with heat recovery wheels for maximum energy savings in fresh air applications.</p>
+          <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+            <a href="#" class="btn-primary" onclick="showPage('contact')">Request Quote</a>
+            <a href="#" class="btn-outline">Download Datasheet</a>
+          </div>
+        </div>
+        <div class="hero-img-main placeholder-img" style="height:380px;border-radius:6px">
+          <div class="label"><span class="icon">🔄</span>Placeholder – Horizontal AHU with Heat Recovery Wheel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px">
+        <div>
+          <h2 class="section-title" style="font-size:36px;margin-bottom:16px">Product Overview</h2>
+          <div class="divider"></div>
+          <p style="color:var(--text-light);line-height:1.75;font-size:15px;margin-bottom:16px">The Horizontal AHU with Heat Recovery Wheel (HRW) is designed for applications where energy recovery from exhaust air is critical. The rotary heat recovery wheel transfers both sensible and latent heat from exhaust air to incoming fresh air, achieving efficiency levels up to 85%.</p>
+          <p style="color:var(--text-light);line-height:1.75;font-size:15px">Ideal for buildings with high fresh air requirements such as hospitals, labs, offices, and educational institutions where reducing HVAC energy consumption is a priority.</p>
+        </div>
+        <div>
+          <h2 class="section-title" style="font-size:36px;margin-bottom:16px">Technical Specifications</h2>
+          <div class="divider"></div>
+          <table class="specs-table">
+            <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Heat Recovery Type</td><td>Rotary Energy Wheel (Sensible + Latent)</td></tr>
+              <tr><td>Recovery Efficiency</td><td>Up to 85% sensible / 75% total</td></tr>
+              <tr><td>Airflow Range</td><td>1,000 – 30,000 CMH</td></tr>
+              <tr><td>Wheel Speed</td><td>10–20 RPM (adjustable)</td></tr>
+              <tr><td>Construction</td><td>Double skin galvanised steel</td></tr>
+              <tr><td>Filter Class</td><td>G4 + F7 or custom</td></tr>
+              <tr><td>Applications</td><td>Offices, Hospitals, Labs, Schools</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================== PRODUCT: PHE ======================== -->
+<div class="page" id="page-product-phe">
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div style="position:relative;z-index:1">
+          <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span><a href="#" onclick="showPage('products')">Products</a><span>/</span>Horizontal with PHE</div>
+          <div class="section-label" style="color:var(--secondary)">Product · Heat Exchange</div>
+          <h1 class="page-hero-title">Horizontal AHU<br>with PHE</h1>
+          <p class="page-hero-sub">Plate heat exchanger integrated AHUs providing efficient energy recovery with zero cross-contamination between supply and exhaust air streams.</p>
+          <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+            <a href="#" class="btn-primary" onclick="showPage('contact')">Request Quote</a>
+          </div>
+        </div>
+        <div class="hero-img-main placeholder-img" style="height:380px;border-radius:6px">
+          <div class="label"><span class="icon">♻️</span>Placeholder – AHU with Plate Heat Exchanger</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px">
+        <div>
+          <h2 class="section-title" style="font-size:36px;margin-bottom:16px">Product Overview</h2>
+          <div class="divider"></div>
+          <p style="color:var(--text-light);line-height:1.75;font-size:15px;margin-bottom:16px">The Horizontal AHU with Plate Heat Exchanger (PHE) uses a fixed cross-flow aluminium plate heat exchanger to recover energy from exhaust air. With no moving parts in the heat exchanger, this system requires minimal maintenance while providing reliable and consistent energy savings.</p>
+          <p style="color:var(--text-light);line-height:1.75;font-size:15px">Particularly suitable for applications requiring separation of supply and exhaust air streams such as hospitals, pharmaceuticals, and food processing facilities.</p>
+        </div>
+        <div>
+          <h2 class="section-title" style="font-size:36px;margin-bottom:16px">Technical Specifications</h2>
+          <div class="divider"></div>
+          <table class="specs-table">
+            <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Heat Recovery Type</td><td>Cross-Flow Plate Heat Exchanger</td></tr>
+              <tr><td>Recovery Efficiency</td><td>Up to 75% sensible</td></tr>
+              <tr><td>Cross Contamination</td><td>Zero (fixed plate – no mixing)</td></tr>
+              <tr><td>Airflow Range</td><td>500 – 20,000 CMH</td></tr>
+              <tr><td>Construction Material</td><td>Aluminium cross-flow plates</td></tr>
+              <tr><td>Maintenance</td><td>Minimal – no moving heat exchanger parts</td></tr>
+              <tr><td>Applications</td><td>Hospitals, Pharma, Food Processing</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================== PRODUCT: COOLING COILS ======================== -->
+<div class="page" id="page-product-coils">
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div style="position:relative;z-index:1">
+          <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span><a href="#" onclick="showPage('products')">Products</a><span>/</span>Cooling Coils</div>
+          <div class="section-label" style="color:var(--secondary)">Product · Cooling</div>
+          <h1 class="page-hero-title">Cooling Coils</h1>
+          <p class="page-hero-sub">Precision-manufactured chilled water and DX cooling coils in copper-aluminium and copper-copper construction. Custom-sized for OEM and field replacement.</p>
+          <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+            <a href="#" class="btn-primary" onclick="showPage('contact')">Request Quote</a>
+          </div>
+        </div>
+        <div class="hero-img-main placeholder-img" style="height:380px;border-radius:6px">
+          <div class="label"><span class="icon">❄️</span>Placeholder – Cooling Coil Product Image</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px">
+        <div>
+          <h2 class="section-title" style="font-size:36px;margin-bottom:16px">Product Overview</h2>
+          <div class="divider"></div>
+          <p style="color:var(--text-light);line-height:1.75;font-size:15px;margin-bottom:16px">Astra Airtech manufactures cooling coils in-house using copper tubing with aluminium or copper fins. Each coil is hydraulically tested and custom-sized to match the specific face dimensions and row/fin density required for the application.</p>
+          <p style="color:var(--text-light);line-height:1.75;font-size:15px">We supply cooling coils as standalone components for OEM manufacturers, as replacement coils for existing AHUs, and as part of our complete AHU packages.</p>
+        </div>
+        <div>
+          <h2 class="section-title" style="font-size:36px;margin-bottom:16px">Specifications</h2>
+          <div class="divider"></div>
+          <table class="specs-table">
+            <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Tube Material</td><td>Copper (seamless)</td></tr>
+              <tr><td>Fin Material</td><td>Aluminium or Copper</td></tr>
+              <tr><td>Coil Type</td><td>Chilled water / DX / Condenser</td></tr>
+              <tr><td>Rows</td><td>2 to 8 rows (custom)</td></tr>
+              <tr><td>Fin Spacing</td><td>2.0 to 3.2 mm (custom)</td></tr>
+              <tr><td>Max Working Pressure</td><td>30 bar (hydraulic test)</td></tr>
+              <tr><td>Sizes</td><td>Custom – all face dimensions available</td></tr>
+              <tr><td>Connections</td><td>Sweat / Flared / Threaded</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================== ABOUT PAGE ======================== -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="container">
+      <div style="position:relative;z-index:1;max-width:700px">
+        <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span>About Us</div>
+        <div class="section-label" style="color:var(--secondary)">Who We Are</div>
+        <h1 class="page-hero-title">India's Trusted HVAC<br>Manufacturer Since 1998</h1>
+        <p class="page-hero-sub">Building engineered HVAC solutions for the most demanding commercial and industrial applications across South India for over 26 years.</p>
+      </div>
+    </div>
+  </div>
+
+  <section style="background:white">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div>
+          <div class="placeholder-img" style="height:460px;border-radius:6px;overflow:hidden">
+            <div class="label"><span class="icon">🏭</span>Placeholder – Astra Airtech Factory Exterior / Team Photo</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">Our Story</div>
+          <h2>Engineering HVAC Excellence Since 1998</h2>
+          <div class="divider"></div>
+          <p>Founded in 1998 as Nair Systems, Astra Airtech has grown from a specialist HVAC parts supplier to a full-scale air handling unit manufacturer with a company value exceeding ₹30 crores. Our manufacturing facility in Bidarahalli, Bangalore houses state-of-the-art CNC fabrication, coil manufacturing, and assembly lines.</p>
+          <p>We specialise in providing top-tier HVAC service parts and custom air handling units for large-scale facilities including malls, corporate offices, data centres, theatres, and showrooms across South India.</p>
+          <p>Our expertise is extended to architects, interior designers, and air-conditioning consultants. We strongly believe that our products and services should not be limited to only supplying quality products — our relationship with the client starts from the very first contact, whether a consultation or a large order.</p>
+          <div class="about-values">
+            <div class="value-item"><div class="value-dot"></div><div class="value-text">Custom engineering for every project</div></div>
+            <div class="value-item"><div class="value-dot"></div><div class="value-text">Early-stage consultant collaboration</div></div>
+            <div class="value-item"><div class="value-dot"></div><div class="value-text">In-house manufacturing control</div></div>
+            <div class="value-item"><div class="value-dot"></div><div class="value-text">Total lifecycle project support</div></div>
+            <div class="value-item"><div class="value-dot"></div><div class="value-text">Energy efficiency focus</div></div>
+            <div class="value-item"><div class="value-dot"></div><div class="value-text">Continuous product development</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:56px">
+        <div class="section-label" style="justify-content:center">Engineering Philosophy</div>
+        <h2 class="section-title">Our Approach to HVAC Design</h2>
+        <div class="divider center"></div>
+        <p class="section-sub" style="margin:0 auto;text-align:center">At the concept stage of every project, our engineers provide detailed inputs on critical parameters to ensure the right system is specified from day one.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <div style="background:white;border:1px solid var(--border);border-top:4px solid var(--secondary);border-radius:6px;padding:32px 28px">
+          <div style="font-size:32px;margin-bottom:20px">📐</div>
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--primary);margin-bottom:12px">Early-Stage Input</h3>
+          <p style="font-size:14px;color:var(--text-light);line-height:1.7">We engage with consultants and architects at the concept stage to provide inputs on air velocity, static pressure, fan selection, air distribution, throw, and noise levels — ensuring cost savings and reducing the margin of error.</p>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-top:4px solid var(--accent);border-radius:6px;padding:32px 28px">
+          <div style="font-size:32px;margin-bottom:20px">⚡</div>
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--primary);margin-bottom:12px">Energy Performance</h3>
+          <p style="font-size:14px;color:var(--text-light);line-height:1.7">Our air distribution products focus on dual functions: energy efficiency and aesthetic integration. Every design decision balances performance with the practical demands of the built environment.</p>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-top:4px solid var(--primary);border-radius:6px;padding:32px 28px">
+          <div style="font-size:32px;margin-bottom:20px">🔧</div>
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--primary);margin-bottom:12px">Total Solutions</h3>
+          <p style="font-size:14px;color:var(--text-light);line-height:1.7">Our philosophy is to provide total solutions — not just products. Our product design capabilities and manufacturing facilities have been deployed by consultants to supply unique, tailor-made products for specific requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--dark-bg)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+        <div class="placeholder-img" style="height:320px;border-radius:6px">
+          <div class="label"><span class="icon">🏭</span>Placeholder – Manufacturing Facility Interior</div>
+        </div>
+        <div class="placeholder-img" style="height:320px;border-radius:6px">
+          <div class="label"><span class="icon">👷</span>Placeholder – Engineering Team / Assembly Floor</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================== MANUFACTURING PAGE ======================== -->
+<div class="page" id="page-manufacturing">
+  <div class="page-hero">
+    <div class="container">
+      <div style="position:relative;z-index:1;max-width:700px">
+        <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span>Manufacturing</div>
+        <div class="section-label" style="color:var(--secondary)">Our Facility</div>
+        <h1 class="page-hero-title">State-of-the-Art<br>HVAC Manufacturing</h1>
+        <p class="page-hero-sub">Precision engineering, in-house coil manufacturing, and rigorous quality control — all under one roof at Bidarahalli, Bangalore.</p>
+      </div>
+    </div>
+  </div>
+
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div class="mfg-grid">
+        <div>
+          <div class="section-label">The Process</div>
+          <h2 class="section-title">How We Manufacture</h2>
+          <div class="divider"></div>
+          <ul class="mfg-list">
+            <li class="mfg-item"><span class="mfg-item-num">01</span><div class="mfg-item-content"><div class="mfg-item-title">Design &amp; Engineering</div><p class="mfg-item-desc">Every AHU begins with an engineering review. Our team analyses airflow requirements, static pressure, coil sizing, fan selection, and panel configuration to produce detailed manufacturing drawings.</p></div></li>
+            <li class="mfg-item"><span class="mfg-item-num">02</span><div class="mfg-item-content"><div class="mfg-item-title">CNC Sheet Metal Fabrication</div><p class="mfg-item-desc">Galvanised steel and aluminium sheets are cut, formed, and bent on CNC machines to tolerances of ±0.5mm, ensuring perfect fit and structural integrity of the AHU casing.</p></div></li>
+            <li class="mfg-item"><span class="mfg-item-num">03</span><div class="mfg-item-content"><div class="mfg-item-title">In-House Coil Manufacturing</div><p class="mfg-item-desc">Cooling coils are manufactured on-site using fin-and-tube technology. Each coil is leak tested at 30 bar hydraulic pressure before installation in the AHU.</p></div></li>
+            <li class="mfg-item"><span class="mfg-item-num">04</span><div class="mfg-item-content"><div class="mfg-item-title">Panel Assembly &amp; Insulation</div><p class="mfg-item-desc">Double-skin panels are assembled with PU foam or mineral wool insulation. Internal galvanised steel surfaces are treated for corrosion resistance and air tightness.</p></div></li>
+            <li class="mfg-item"><span class="mfg-item-num">05</span><div class="mfg-item-content"><div class="mfg-item-title">Performance Testing</div><p class="mfg-item-desc">Completed AHUs undergo airflow performance testing, static pressure testing, leakage testing to EN 1886 Class L2, and vibration analysis before factory dispatch.</p></div></li>
+            <li class="mfg-item"><span class="mfg-item-num">06</span><div class="mfg-item-content"><div class="mfg-item-title">Delivery &amp; Site Support</div><p class="mfg-item-desc">Our team supervises installation and commissioning on-site, and provides training to the client's maintenance team on operation and preventive maintenance procedures.</p></div></li>
+          </ul>
+        </div>
+        <div class="mfg-images">
+          <div class="mfg-img placeholder-img"><div class="label"><span class="icon">🏭</span>Placeholder – Factory Floor Wide View</div></div>
+          <div class="mfg-img placeholder-img"><div class="label"><span class="icon">⚙️</span>Placeholder – CNC Machine Operation</div></div>
+          <div class="mfg-img placeholder-img"><div class="label"><span class="icon">🔬</span>Placeholder – Pressure Testing / QC Lab</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:white">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:48px">
+        <div class="section-label" style="justify-content:center">Factory Gallery</div>
+        <h2 class="section-title">Inside Our Facility</h2>
+        <div class="divider center"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+        <div class="placeholder-img" style="height:220px;border-radius:6px"><div class="label"><span class="icon">🏭</span>Placeholder – Assembly Line</div></div>
+        <div class="placeholder-img" style="height:220px;border-radius:6px"><div class="label"><span class="icon">🔩</span>Placeholder – AHU Casing Fabrication</div></div>
+        <div class="placeholder-img" style="height:220px;border-radius:6px"><div class="label"><span class="icon">❄️</span>Placeholder – Coil Manufacturing</div></div>
+        <div class="placeholder-img" style="height:220px;border-radius:6px"><div class="label"><span class="icon">📦</span>Placeholder – Finished Products Ready for Dispatch</div></div>
+        <div class="placeholder-img" style="height:220px;border-radius:6px"><div class="label"><span class="icon">👷</span>Placeholder – Site Installation Support</div></div>
+        <div class="placeholder-img" style="height:220px;border-radius:6px"><div class="label"><span class="icon">🔬</span>Placeholder – Quality Testing Lab</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================== CONTACT PAGE ======================== -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="container">
+      <div style="position:relative;z-index:1;max-width:700px">
+        <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span>Contact Us</div>
+        <div class="section-label" style="color:var(--secondary)">Get In Touch</div>
+        <h1 class="page-hero-title">Request a Quote or<br>Talk to Our Engineers</h1>
+        <p class="page-hero-sub">Share your HVAC project requirements and receive a detailed technical and commercial proposal within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="quote-form" style="background:var(--bg)">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="section-label">Contact Details</div>
+          <h2 class="section-title" style="font-size:36px">Reach Our Team</h2>
+          <div class="divider"></div>
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-card-icon">📞</div>
+              <div>
+                <div class="contact-card-title">Phone</div>
+                <div class="contact-card-val">+91 80 2990 9055</div>
               </div>
             </div>
-            <div class="frow">
-              <div class="fg">
-                <label for="fe">Email *</label>
-                <input type="email" id="fe" name="email" placeholder="rajesh@company.com" required autocomplete="email">
-                <span class="ferr" id="fe-e">Please enter a valid email</span>
-              </div>
-              <div class="fg">
-                <label for="fp">Phone</label>
-                <input type="tel" id="fp" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+            <div class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div>
+                <div class="contact-card-title">Email</div>
+                <div class="contact-card-val">nairsystems@gmail.com</div>
               </div>
             </div>
-            <div class="fg">
-              <label for="ft">Project Type *</label>
-              <select id="ft" name="type" required>
-                <option value="">Select project type</option>
-                <option>Hospital / Healthcare</option>
-                <option>Data Centre</option>
-                <option>Commercial Building</option>
-                <option>Pharmaceutical</option>
-                <option>Industrial Plant</option>
-                <option>Retail / Mall</option>
-                <option>Other</option>
+            <div class="contact-card">
+              <div class="contact-card-icon">🏭</div>
+              <div>
+                <div class="contact-card-title">Factory &amp; Office Address</div>
+                <div class="contact-card-val">Survey No 2/24, Bidarahalli,<br>Cheemasandra Road,<br>Near East Point College,<br>Bangalore – 560049</div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">💬</div>
+              <div>
+                <div class="contact-card-title">WhatsApp</div>
+                <div class="contact-card-val"><a href="https://wa.me/918029909055" target="_blank" style="color:var(--secondary);text-decoration:none;font-weight:600">Chat on WhatsApp →</a></div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:28px">
+            <div class="map-placeholder">
+              <div class="map-label">📍 Placeholder – Google Maps · Bidarahalli, Bangalore 560049</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:white;border:1px solid var(--border);border-radius:8px;padding:40px">
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:700;color:var(--primary);margin-bottom:6px">Send an Enquiry</h3>
+          <p style="font-size:14px;color:var(--text-light);margin-bottom:28px">Fill out the form below. Our engineering team will respond within 24 hours.</p>
+          <form onsubmit="handleFormSubmit(event)">
+            <div class="form-grid-2" style="--bg:var(--bg)">
+              <div class="form-group">
+                <label style="color:var(--text-light)">Full Name *</label>
+                <input type="text" placeholder="Your full name" required style="background:var(--bg);border-color:var(--border);color:var(--text)">
+              </div>
+              <div class="form-group">
+                <label style="color:var(--text-light)">Company</label>
+                <input type="text" placeholder="Company name" style="background:var(--bg);border-color:var(--border);color:var(--text)">
+              </div>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label style="color:var(--text-light)">Phone *</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required style="background:var(--bg);border-color:var(--border);color:var(--text)">
+              </div>
+              <div class="form-group">
+                <label style="color:var(--text-light)">Email *</label>
+                <input type="email" placeholder="you@company.com" required style="background:var(--bg);border-color:var(--border);color:var(--text)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label style="color:var(--text-light)">Product / Service Required</label>
+              <select style="background:white;border-color:var(--border);color:var(--text)">
+                <option value="">Select a product or service...</option>
+                <option>Air Handling Units (AHU)</option>
+                <option>AHU with Heat Recovery Wheel (HRW)</option>
+                <option>AHU with Plate Heat Exchanger (PHE)</option>
+                <option>Cooling Coils</option>
+                <option>HVAC Spare Parts / Service</option>
+                <option>Other / General Enquiry</option>
               </select>
-              <span class="ferr" id="ft-e">Please select a project type</span>
             </div>
-            <div class="fg">
-              <label for="fl">Location</label>
-              <input type="text" id="fl" name="location" placeholder="Bangalore, Karnataka" autocomplete="address-level2">
+            <div class="form-group">
+              <label style="color:var(--text-light)">Project Type</label>
+              <select style="background:white;border-color:var(--border);color:var(--text)">
+                <option value="">Select project type...</option>
+                <option>New Commercial Building</option>
+                <option>Hospital / Healthcare</option>
+                <option>Data Center</option>
+                <option>Industrial Facility</option>
+                <option>Retrofit / Replacement</option>
+                <option>OEM / Manufacturing</option>
+              </select>
             </div>
-            <div class="fg">
-              <label for="fr">Project Requirements</label>
-              <textarea id="fr" name="requirements" placeholder="Briefly describe your project — airflow requirements, building type, timeline…" rows="4"></textarea>
+            <div class="form-group">
+              <label style="color:var(--text-light)">Message / Requirements</label>
+              <textarea rows="4" placeholder="Describe your requirements: airflow capacity, building type, timeline, quantity..." style="background:var(--bg);border-color:var(--border);color:var(--text)"></textarea>
             </div>
-            <div style="margin-top:6px">
-              <button type="submit" class="btn btn-p" id="sbtn" style="width:100%;padding:14px">
-                Send Enquiry
-                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-            <div class="fmsg" id="fmsg" role="alert" aria-live="polite"></div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
+              Submit Enquiry →
+            </button>
           </form>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<!-- ══════════ FOOTER ══════════ -->
-<footer role="contentinfo">
-  <div class="W">
-    <div class="ftop">
-      <div class="fbrand">
-        <a href="#" class="nlogo" aria-label="Astra Airtech home">
-          <div class="nmark" aria-hidden="true">AA</div>
-          <div class="ntext">
-            <strong>Astra Airtech</strong>
-            <small>HVAC SYSTEMS · EST. 1998</small>
-          </div>
+
+<!-- ======================== FOOTER (SHARED) ======================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="#" onclick="showPage('home')" style="margin-bottom:4px;display:inline-flex">
+          <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div class="logo-text"><span class="logo-name">ASTRA AIRTECH <span class="logo-placeholder-tag">Logo · 160×42px</span></span><span class="logo-sub">Placeholder – Replace with actual logo (SVG/PNG, transparent bg)</span></div>
         </a>
-        <div class="fa">Bangalore's trusted manufacturer of Air Handling Units and HVAC systems for critical commercial and industrial applications. 30 years of engineering excellence.</div>
-        <address class="fadd" style="font-style:normal">Survey No 2/24, Bidarahalli<br>Cheemasandra Road, Near East Point College<br>Bangalore 560049 · Karnataka · India</address>
+        <p class="footer-brand-desc">Premium HVAC air handling unit manufacturer in Bangalore. Custom AHUs, cooling coils, and heat recovery systems for commercial and industrial buildings since 1998.</p>
+        <div class="footer-contact-item">📞 <div><strong>+91 80 2990 9055</strong></div></div>
+        <div class="footer-contact-item">✉️ <div><strong>nairsystems@gmail.com</strong></div></div>
+        <div class="footer-contact-item">📍 <div>Survey No 2/24, Bidarahalli, Cheemasandra Road, Near East Point College, Bangalore 560049</div></div>
       </div>
       <div>
-        <div class="fch">Products</div>
-        <ul class="flinks">
-          <li><a href="#products">Air Handling Units</a></li>
-          <li><a href="#products">AHU with HRW</a></li>
-          <li><a href="#products">AHU with PHE</a></li>
-          <li><a href="#products">Cooling Coils</a></li>
-          <li><a href="#contact">Custom Engineering</a></li>
+        <div class="footer-col-title">Products</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('product-ahu')">Air Handling Units</a></li>
+          <li><a href="#" onclick="showPage('product-hrw')">AHU with Heat Recovery Wheel</a></li>
+          <li><a href="#" onclick="showPage('product-phe')">AHU with Plate Heat Exchanger</a></li>
+          <li><a href="#" onclick="showPage('product-coils')">Cooling Coils</a></li>
+          <li><a href="#" onclick="showPage('products')">All Products</a></li>
         </ul>
       </div>
       <div>
-        <div class="fch">Industries</div>
-        <ul class="flinks">
-          <li><a href="#ind">Healthcare</a></li>
-          <li><a href="#ind">Data Centres</a></li>
-          <li><a href="#ind">Commercial Buildings</a></li>
-          <li><a href="#ind">Pharma Manufacturing</a></li>
-          <li><a href="#ind">Industrial Plants</a></li>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('manufacturing')">Manufacturing</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
         </ul>
       </div>
       <div>
-        <div class="fch">Company</div>
-        <ul class="flinks">
-          <li><a href="#why">About Astra Airtech</a></li>
-          <li><a href="#cases">Projects</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#contact">Careers</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+        <div class="footer-col-title">Industries</div>
+        <ul class="footer-links">
+          <li><a href="#">Hospitals &amp; Healthcare</a></li>
+          <li><a href="#">Data Centers</a></li>
+          <li><a href="#">Corporate Offices</a></li>
+          <li><a href="#">Shopping Malls</a></li>
+          <li><a href="#">Industrial Facilities</a></li>
         </ul>
       </div>
     </div>
-    <div class="fbot">
-      <div class="fcopy">© 2024 Astra Airtech. All rights reserved. · Bangalore, India</div>
-      <div class="fcerts" aria-label="Certifications">
-        <span class="fcert">ISO 9001</span>
-        <span class="fcert">ASHRAE</span>
-        <span class="fcert">BEE 5★</span>
-        <span class="fcert">MSME</span>
+    <div class="footer-bottom">
+      <div class="footer-bottom-text">© 2024 Astra Airtech (Nair Systems). All rights reserved. · Bangalore, India</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- ══════════ MOBILE FLOAT BAR ══════════ -->
-<div class="mfloat" role="complementary" aria-label="Quick contact actions">
-  <a href="tel:+918029909055" class="btn btn-g" aria-label="Call Astra Airtech">📞 Call</a>
-  <a href="#contact" class="btn btn-p" aria-label="Request a quote">Request Quote →</a>
-</div>
-
-<!-- ══════════ SCRIPTS ══════════ -->
 <script>
-(function(){
-  'use strict';
-
-  // ── Progress + nav scroll + back-to-top ──
-  var prog=document.getElementById('prog');
-  var btt=document.getElementById('btt');
-  var nav=document.getElementById('nav');
-  function onScroll(){
-    var de=document.documentElement;
-    var pct=(de.scrollTop/(de.scrollHeight-de.clientHeight))*100;
-    prog.style.width=pct+'%';
-    nav.classList.toggle('scrolled',de.scrollTop>60);
-    btt.classList.toggle('show',de.scrollTop>400);
+  // PAGE NAVIGATION
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const target = document.getElementById('page-' + pageId);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
-  window.addEventListener('scroll',onScroll,{passive:true});
 
-  // ── Active nav highlight ──
-  var secs=document.querySelectorAll('section[id]');
-  var nls=document.querySelectorAll('.nlinks a');
-  var obs=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        nls.forEach(function(a){
-          a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id);
-        });
-      }
-    });
-  },{rootMargin:'-40% 0px -50% 0px'});
-  secs.forEach(function(s){obs.observe(s);});
-
-  // ── Hamburger ──
-  var ham=document.getElementById('ham');
-  var mnav=document.getElementById('mnav');
-  ham.addEventListener('click',function(){
-    var open=mnav.classList.toggle('open');
-    ham.classList.toggle('open',open);
-    ham.setAttribute('aria-expanded',String(open));
-  });
-  mnav.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click',function(){
-      mnav.classList.remove('open');
-      ham.classList.remove('open');
-      ham.setAttribute('aria-expanded','false');
-    });
+  // NAV SCROLL
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
   });
 
-  // ── Scroll reveal ──
-  var ro=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}
-    });
-  },{threshold:0.08,rootMargin:'0px 0px -28px 0px'});
-  document.querySelectorAll('.rev').forEach(function(el){ro.observe(el);});
-
-  // ── Smooth scroll ──
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(e){
-      var id=this.getAttribute('href');
-      if(id==='#')return;
-      var t=document.querySelector(id);
-      if(!t)return;
-      e.preventDefault();
-      var navH=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'))||68;
-      var y=t.getBoundingClientRect().top+window.scrollY-navH-8;
-      window.scrollTo({top:y,behavior:'smooth'});
-    });
-  });
-
-  // ── Form validation ──
-  var form=document.getElementById('enqForm');
-  var fmsg=document.getElementById('fmsg');
-  var sbtn=document.getElementById('sbtn');
-
-  function showE(id,show){
-    var e=document.getElementById(id+'-e');
-    var f=document.getElementById(id);
-    if(!e||!f)return;
-    e.style.display=show?'block':'none';
-    f.classList.toggle('err',show);
+  // HAMBURGER
+  function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
   }
-  function valF(el){
-    if(el.required&&!el.value.trim()){showE(el.id,true);return false;}
-    if(el.type==='email'&&el.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value)){showE(el.id,true);return false;}
-    showE(el.id,false);return true;
-  }
-  ['fn','fc2','fe','ft'].forEach(function(id){
-    var el=document.getElementById(id);
-    if(!el)return;
-    el.addEventListener('blur',function(){valF(el);});
-    el.addEventListener('input',function(){if(el.classList.contains('err'))valF(el);});
-  });
-  form.addEventListener('submit',function(e){
+
+  // FORM SUBMIT
+  function handleFormSubmit(e) {
     e.preventDefault();
-    var ok=true;
-    ['fn','fc2','fe','ft'].forEach(function(id){
-      if(!valF(document.getElementById(id)))ok=false;
-    });
-    if(!ok)return;
-    sbtn.disabled=true;
-    sbtn.textContent='Sending…';
-    setTimeout(function(){
-      fmsg.className='fmsg ok';
-      fmsg.textContent='✓ Enquiry received. Our team will contact you within 24 hours.';
-      form.reset();
-      sbtn.disabled=false;
-      sbtn.innerHTML='Send Enquiry <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-    },900);
-  });
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.textContent = '✅ Enquiry Sent! We\'ll contact you soon.';
+    btn.style.background = '#16a34a';
+    btn.disabled = true;
+  }
 
-})();
+  // SCROLL ANIMATIONS
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.product-card, .industry-item, .why-card, .mfg-item, .project-card, .cert-badge').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+  });
 </script>
 </body>
 </html>
